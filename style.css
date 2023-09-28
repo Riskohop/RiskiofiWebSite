@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0 25% 0 25%;
+    padding: 0 20%;
     background-image: url("Images/Website.jpg");
     background-position: end;
     background-size: cover;
@@ -8,27 +8,193 @@ body {
 .author {
     display: flex;
     margin: 10% 0 0 0;
+    
     color: rgb(129, 129, 129);
     background-color: rgba(34, 34, 34, 0.459); 
     border-radius: 5px;
-    padding: 2%;
+    padding: 2% 0 2% 2%;
     border: solid;
     border-width: 2px;
     border-color: rgb(29, 29, 29);
 }
 .author-img-div {
+    max-width: 200px;
+    max-height: 250px;
     display: inline-block;
     background-color: rgba(99, 99, 99, 0.548); 
     border-radius: 5px;
     border: solid;
     border-width: 2px;
     border-color: rgb(90, 90, 90);
+    
 }
 .author-img {
-    max-width: 100px;
-    max-height: 150px;
+    max-width: 200px;
+    max-height: 250px;
     vertical-align: bottom;
 }
 .author-info {
     display: inline-block;
+    border: solid  rgb(90, 90, 90);
+    border-radius: 2px;
+    outline: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    margin: 0 0 0 3%;
+    padding: 0 0 0 7px;
+}
+.nickname {
+    font-family: 'Source Code Pro';
+    font-size: xx-large;
+    margin: 0;
+    color:white;
+}
+.name {
+    color: rgb(157, 157, 157);
+    font-size: x-large;
+}
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.link-list2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 3%;
+}
+.links {
+    margin: 27% 0 0 0;
+    padding: 0;
+    display: flex;
+}
+.li {
+  display: flex;
+
+  font-family: 'Source Code Pro';
+  font-size: large;
+  margin: 0.5% 0;
+}
+.telegram-text {
+    background-color: rgb(3,156,228);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.telegram-text:hover {
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.telegram-image {
+    vertical-align: bottom;
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 25px;
+}
+.gmail-text {
+    background-color: rgb(255, 113, 113);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.gmail-text:hover {
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.gmail-image {
+    vertical-align: bottom;
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 25px;
+}
+.discord-text {
+    background-color: rgb(93, 104, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.discord-text:hover {
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.discord-image {
+    vertical-align: bottom;
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 25px;
+}
+.github-text {
+    background-color: rgb(186, 186, 186);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.github-text:hover {
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.github-image {
+    vertical-align: bottom;
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 25px;
+}
+.steam-text {
+    background-color: rgb(41, 73, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.steam-text:hover {
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.steam-image {
+    vertical-align: bottom;
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 25px;
+}
+.discordServer-text {
+    
+    background: linear-gradient(101deg, rgba(60,255,66,1) 0%, rgba(245,255,0,1) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.discordServer-text:hover {
+    background: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.discordServer-image {
+    vertical-align: bottom;
+    border-radius: 5px;
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 25px;
 }

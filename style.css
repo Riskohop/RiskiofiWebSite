@@ -13,21 +13,23 @@ body {
     margin: 10% 20% 0 20%;
     color: rgb(129, 129, 129);
     background-color: #1b1b1b; 
-    border-radius: 5px;
+    border-radius: 22px;
     padding: 20px 0 20px 20px;
     border: solid;
-    border-width: 2px;
-    border-color: #0f0f0f;
+    border-top: 0;
+    border-right: 0;
+    border-width: 4px;
+    border-color: #272727;
 }
 
 .author-info {
     max-width: 1000px;
     display: block;
-    border: solid  rgb(90, 90, 90);
-    border-radius: 2px;
+    border: solid  rgb(70, 123, 65);
+    border-radius: 15px;
     outline: 0;
+    border-width: 3px;
     border-right: 0;
-    border-bottom: 0;
     border-top: 0;
     margin: 0 0 0 25px;
     padding: 0 0 0 7px;
@@ -36,10 +38,10 @@ body {
     font-family: 'Source Code Pro';
     font-size: xx-large;
     margin: 0;
-    color:white;
+    color:#B7EFC5;
 }
 .name {
-    color: rgb(157, 157, 157);
+    color: #6ed387;
     font-size: x-large;
 }
 .link-list {
@@ -55,7 +57,7 @@ body {
     padding: 0;
 }
 .links {
-    margin: 35% 0 0 0;
+    margin: 32% 0 0 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -748,15 +750,16 @@ body {
 .author-img {
   width: 195px;
   height: 280px;
-  border-radius: 40px 0 40px 0;
+  border-radius: 39px 39px 39px 39px;
 }
 .card {
-  border: solid rgb(35, 35, 35);
+  border: solid rgb(53, 53, 53);
   width: 195px;
   height: 280px;
-  background: rgba(56, 56, 56, 0.57);
-  border-radius: 40px 0 40px 0;
-  border-width: 4px;
+  background: rgba(55, 55, 55, 0.316);
+  border-radius: 40px 40px 40px 40px;
+  border-top:0;
+  border-width: 5px;
  }
 
  button {
@@ -852,20 +855,7 @@ body {
  .spinner div:nth-of-type(6) {
   transform: translateZ(72px);
  }
- 
- /* @keyframes spinner-y0fdc1 {
-  0% {
-   transform: rotate(0deg) rotateX(-25deg) rotateY(25deg);
-  }
- 
-  50% {
-   transform: rotate(0deg) rotateX(-385deg) rotateY(25deg);
-  }
- 
-  100% {
-   transform: rotate(0deg) rotateX(-385deg) rotateY(385deg);
-  }
- } */
+
   @keyframes spinner-y0fdc1 {
   0% {
    transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
@@ -879,3 +869,7 @@ body {
    transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
   }
  }
+
+
+ 
+ 

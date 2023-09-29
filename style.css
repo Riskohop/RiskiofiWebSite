@@ -817,13 +817,14 @@ body {
  }
  
  .spinner > div {
-  background-color: rgba(102, 102, 102, 0.2);
+  background-color: #2c723e33;
   height: 100%;
   position: absolute;
   width: 100%;
-  border: 2px solid #ffffff;
+  border: 2px solid #4db868;
  }
  
+
  .spinner div:nth-of-type(1) {
   transform: translateZ(-72px) rotateY(180deg);
  }

@@ -1,21 +1,23 @@
 body {
     margin: 0;
-    padding: 0 20% 20% 20%;
-    background-image: url("Images/Website.jpg");
-    background-position: end;
-    background-size: cover;
+    padding: 0;
+    background: #111111;
+
+}
+.btns {
+  margin: 3% 20% 0 20%;
 }
 .author {
     
     display: flex;
-    margin: 10% 0 0 0;
+    margin: 10% 20% 0 20%;
     color: rgb(129, 129, 129);
-    background-color: rgba(34, 34, 34, 0.459); 
+    background-color: #1b1b1b; 
     border-radius: 5px;
     padding: 20px 0 20px 20px;
     border: solid;
     border-width: 2px;
-    border-color: rgb(29, 29, 29);
+    border-color: #0f0f0f;
 }
 
 .author-info {
@@ -102,7 +104,7 @@ body {
     width: 25px;
     height: 25px;
 }
-.gmail-btn {
+.link-btn {
   --btn-default-bg: rgba(42, 42, 42, 0.377);
   --btn-padding: 2px 5px;
   --btn-hover-bg: rgb(50, 50, 50);
@@ -113,97 +115,7 @@ body {
   --btn-shadow-color: rgba(0, 0, 0, 0);
   --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
   --hover-btn-color: #ffffff;
-  --default-btn-color: #ff7272;
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 400;
-  --font-family: 'Source Code Pro',monospace;
-  /* 👆 this field should not be empty */
-}
-.telegram-btn {
-  --btn-default-bg: rgba(42, 42, 42, 0.377);
-  --btn-padding: 2px 5px;
-  --btn-hover-bg: rgb(50, 50, 50);
-  border-radius: 5px;
-  --btn-transition: .3s;
-  --btn-letter-spacing: .01rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgba(0, 0, 0, 0);
-  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #ffffff;
-  --default-btn-color: rgb(3,156,228);
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 400;
-  --font-family: 'Source Code Pro',monospace;
-  /* 👆 this field should not be empty */
-}
-.discord-btn {
-  --btn-default-bg: rgba(42, 42, 42, 0.377);
-  --btn-padding: 2px 5px;
-  --btn-hover-bg: rgb(50, 50, 50);
-  border-radius: 5px;
-  --btn-transition: .3s;
-  --btn-letter-spacing: .01rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgba(0, 0, 0, 0);
-  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #ffffff;
-  --default-btn-color: rgb(93, 104, 255);
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 400;
-  --font-family: 'Source Code Pro',monospace;
-  /* 👆 this field should not be empty */
-}
-.github-btn {
-  --btn-default-bg: rgba(42, 42, 42, 0.377);
-  --btn-padding: 2px 5px;
-  --btn-hover-bg: rgb(50, 50, 50);
-  border-radius: 5px;
-  --btn-transition: .3s;
-  --btn-letter-spacing: .01rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgba(0, 0, 0, 0);
-  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #ffffff;
-  --default-btn-color: rgb(186, 186, 186);
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 400;
-  --font-family: 'Source Code Pro',monospace;
-  /* 👆 this field should not be empty */
-}
-.steam-btn {
-  --btn-default-bg: rgba(42, 42, 42, 0.377);
-  --btn-padding: 2px 5px;
-  --btn-hover-bg: rgb(50, 50, 50);
-  border-radius: 5px;
-  --btn-transition: .3s;
-  --btn-letter-spacing: .01rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgba(0, 0, 0, 0);
-  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #ffffff;
-  --default-btn-color: rgb(41, 73, 255);;
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 400;
-  --font-family: 'Source Code Pro',monospace;
-  /* 👆 this field should not be empty */
-}
-.discord-server-btn {
-  --btn-default-bg: rgba(42, 42, 42, 0.377);
-  --btn-padding: 2px 5px;
-  --btn-hover-bg: rgb(50, 50, 50);
-  border-radius: 5px;
-  --btn-transition: .3s;
-  --btn-letter-spacing: .01rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgba(0, 0, 0, 0);
-  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #ffffff;
-  --default-btn-color: rgb(146, 238, 110);
+  --default-btn-color: rgb(104,207,128);
   --font-size: 16px;
   /* 👆 this field should not be empty */
   --font-weight: 400;
@@ -212,7 +124,7 @@ body {
 }
 /* button settings 👆 */
 
-.gmail-btn, .telegram-btn, .discord-btn, .github-btn, .steam-btn, .discord-server-btn {
+.link-btn{
   box-sizing: border-box;
   padding: var(--btn-padding);
   display: flex;
@@ -228,7 +140,7 @@ body {
   box-shadow: var(--btn-shadow);
 }
 
-.gmail-btn span, .telegram-btn span, .discord-btn span, .github-btn span, .steam-btn span, .discord-server-btn span{
+.link-btn span{
   letter-spacing: var(--btn-letter-spacing);
   transition: var(--btn-transition);
   box-sizing: border-box;
@@ -236,18 +148,18 @@ body {
   background: inherit;
 }
 
-.gmail-btn span::before, .telegram-btn span::before, .discord-btn span::before, .github-btn span::before, .steam-btn span::before,.discord-server-btn span::before{
+.link-btn span::before{
   box-sizing: border-box;
   position: absolute;
   content: "";
   background: inherit;
 }
 
-.gmail-btn:hover, .gmail-btn:focus, .telegram-btn:hover, .telegram-btn:focus, .discord-btn:hover, .discord-btn:focus, .github-btn:hover, .github-btn:focus, .steam-btn:hover, .steam-btn:focus, .discord-server-btn:hover, .discord-server-btn:focus {
+.link-btn:hover, .link-btn:focus{
   background: var(--btn-hover-bg);
 }
 
-.gmail-btn:hover span, .gmail-btn:focus span, .telegram-btn:hover span, .telegram-btn:focus span, .discord-btn:hover span, .discord-btn:focus span, .github-btn:hover span, .github-btn:focus span, .steam-btn:hover span, .steam-btn:focus span, .discord-server-btn:hover span, .discord-server-btn:focus span{
+.link-btn:hover span, .link-btn:focus span{
   color: var(--hover-btn-color);
 }
 
@@ -864,15 +776,15 @@ body {
 
 #btn:hover,:focus {
   color: #ffffff;
-  background: #008cff;
-  border: 1px solid #008cff;
+  background: #4AD66D;
+  border: 1px solid #4AD66D;
   text-shadow: 0 0 5px #ffffff,
               0 0 10px #ffffff,
               0 0 20px #ffffff;
-  box-shadow: 0 0 5px #008cff,
-              0 0 20px #008cff,
-              0 0 50px #008cff,
-              0 0 100px #008cff;
+  box-shadow: 0 0 5px #4AD66D,
+              0 0 20px #4AD66D,
+              0 0 50px #4AD66D,
+              0 0 100px #4AD66D;
 }
 .preloader {
   /*фиксированное позиционирование*/
@@ -883,7 +795,7 @@ body {
   right: 0;
   bottom: 0;
   /* фоновый цвет элемента */
-  background: rgb(28, 28, 28);
+  background: #111111;
   /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
   z-index: 1001;
 }

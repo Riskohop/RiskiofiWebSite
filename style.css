@@ -122,7 +122,7 @@ body {
   --btn-hover-bg: rgb(50, 50, 50);
   border-radius: 5px;
   --btn-transition: .3s;
-  --btn-letter-spacing: .1rem;
+  --btn-letter-spacing: .01rem;
   --btn-animation-duration: 1.2s;
   --btn-shadow-color: rgba(0, 0, 0, 0);
   --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
@@ -767,6 +767,7 @@ body {
   width: 195px;
   height: 280px;
   margin: 0 0 0 0;
+  flex: 0 1 content;
   background: rgba(55, 55, 55, 0.316);
   border-radius: 40px 40px 40px 40px;
   border-top:0;

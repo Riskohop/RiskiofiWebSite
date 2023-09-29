@@ -17,17 +17,7 @@ body {
     border-width: 2px;
     border-color: rgb(29, 29, 29);
 }
-.author-img {
-    max-width: 200px;
-    max-height: 300px;
-    vertical-align: bottom;
-    display: inline-block;
-    background-color: rgba(99, 99, 99, 0.548); 
-    border-radius: 5px;
-    border: solid;
-    border-width: 2px;
-    border-color: rgb(90, 90, 90);
-}
+
 .author-info {
     max-width: 1000px;
     display: block;
@@ -59,13 +49,11 @@ body {
 .link-list2 {
     display: block;
     list-style-type: none;
-    margin: 0 0 0 0;
-    
+    margin: 0 ;
     padding: 0;
-   
 }
 .links {
-    margin: 40% 0 0 0;
+    margin: 35% 0 0 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -83,19 +71,11 @@ body {
     width: 22px;
     height: 22px;
 }
-
 .gmail-image {
     vertical-align: bottom;
     margin: 0 5px 0 0;
     width: 25px;
     height: 25px;
-}
-.discord-text {
-    background-color: rgb(93, 104, 255);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
 }
 .discord-image {
     vertical-align: bottom;
@@ -103,39 +83,17 @@ body {
     width: 25px;
     height: 25px;
 }
-.github-text {
-    background-color: rgb(186, 186, 186);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
 .github-image {
     vertical-align: bottom;
     margin: 0 5px 0 0;
     width: 25px;
     height: 25px;
 }
-.steam-text {
-    background-color: rgb(41, 73, 255);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
 .steam-image {
     vertical-align: bottom;
     margin: 0 5px 0 0;
     width: 25px;
     height: 25px;
-}
-.discordServer-text {
-    
-    background: linear-gradient(101deg, rgba(60,255,66,1) 0%, rgba(245,255,0,1) 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
 }
 .discordServer-image {
     vertical-align: bottom;
@@ -875,3 +833,16 @@ body {
     right: 0;
   }
 }
+.author-img {
+  width: 195px;
+  height: 280px;
+  border-radius: 40px 0 40px 0;
+}
+.card {
+  border: solid rgb(35, 35, 35);
+  width: 195px;
+  height: 280px;
+  background: rgba(56, 56, 56, 0.57);
+  border-radius: 40px 0 40px 0;
+  border-width: 4px;
+ }

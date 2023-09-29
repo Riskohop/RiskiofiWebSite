@@ -8,13 +8,15 @@ body {
   margin: 3% 20% 0 20%;
 }
 .author {
-    
-    display: flex;
-    margin: 10% 20% 0 20%;
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 10% 20% 0% 20%;
     color: rgb(129, 129, 129);
     background-color: #1b1b1b; 
     border-radius: 22px;
-    padding: 20px 0 20px 20px;
+    padding: 20px 0px 20px 0px;
     border: solid;
     border-top: 0;
     border-right: 0;
@@ -24,15 +26,22 @@ body {
 
 .author-info {
     max-width: 1000px;
-    display: block;
+    display: flex;
+    
+    flex-direction: column;
     border: solid  rgb(70, 123, 65);
     border-radius: 15px;
     outline: 0;
     border-width: 3px;
     border-right: 0;
     border-top: 0;
-    margin: 0 0 0 25px;
+    flex: 1 0 min-content;
+    margin: 0 0 0 0;
     padding: 0 0 0 7px;
+}
+.author-info-text {
+  flex: 1 1 max-content;
+  align-self: top;
 }
 .nickname {
     font-family: 'Source Code Pro';
@@ -48,16 +57,17 @@ body {
     display: block;
     list-style-type: none;
     padding: 0;
-    margin: 0 10px 0 0;
+    margin: 0 0 0 0;
 }
 .link-list2 {
     display: block;
     list-style-type: none;
-    margin: 0 ;
+    margin: 0;
     padding: 0;
 }
 .links {
-    margin: 32% 0 0 0;
+    align-self: bottom;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -756,6 +766,7 @@ body {
   border: solid rgb(53, 53, 53);
   width: 195px;
   height: 280px;
+  margin: 0 0 0 0;
   background: rgba(55, 55, 55, 0.316);
   border-radius: 40px 40px 40px 40px;
   border-top:0;
@@ -818,8 +829,18 @@ body {
   animation: spinner-y0fdc1 4s infinite linear;
   transform-style: preserve-3d;
  }
- 
- .spinner > div {
+ .spinner-author {
+  width: 120px;
+  height: 120px;
+  animation: spinner-y0fdc1 10s infinite linear;
+  transform-style: preserve-3d;
+ }
+ .cube {
+  align-self: center;
+  margin: 10px 5% 10px 0;
+  flex: 0 1 120px;
+ }
+ .spinner > div, .spinner-author > div {
   background-color: #2c723e33;
   height: 100%;
   position: absolute;
@@ -828,32 +849,32 @@ body {
  }
  
 
- .spinner div:nth-of-type(1) {
-  transform: translateZ(-72px) rotateY(180deg);
+ .spinner div:nth-of-type(1), .spinner-author div:nth-of-type(1) {
+  transform: translateZ(-60px) rotateY(180deg);
  }
  
- .spinner div:nth-of-type(2) {
+ .spinner div:nth-of-type(2), .spinner-author div:nth-of-type(2) {
   transform: rotateY(-270deg) translateX(50%);
   transform-origin: top right;
  }
  
- .spinner div:nth-of-type(3) {
+ .spinner div:nth-of-type(3), .spinner-author div:nth-of-type(3) {
   transform: rotateY(270deg) translateX(-50%);
   transform-origin: center left;
  }
  
- .spinner div:nth-of-type(4) {
+ .spinner div:nth-of-type(4), .spinner-author div:nth-of-type(4) {
   transform: rotateX(90deg) translateY(-50%);
   transform-origin: top center;
  }
  
- .spinner div:nth-of-type(5) {
+ .spinner div:nth-of-type(5), .spinner-author div:nth-of-type(5) {
   transform: rotateX(-90deg) translateY(50%);
   transform-origin: bottom center;
  }
  
- .spinner div:nth-of-type(6) {
-  transform: translateZ(72px);
+ .spinner div:nth-of-type(6), .spinner-author div:nth-of-type(6) {
+  transform: translateZ(60px);
  }
 
   @keyframes spinner-y0fdc1 {

@@ -14,7 +14,7 @@ body {
     justify-content: space-evenly;
     margin: 10% 17% 0% 17%;
     color: rgb(129, 129, 129);
-  box-shadow: -10px 10px rgb(13, 13, 13);
+  box-shadow: -10px 10px 5px rgb(13, 13, 13);
 
     background-color: #1b1b1b; 
     border-radius: 15px;
@@ -29,7 +29,7 @@ body {
 .author-info {
     max-width: 1000px;
     display: flex;
-    box-shadow: -10px 10px rgb(15, 15, 15);
+    box-shadow: -10px 10px 5px rgb(15, 15, 15);
     
     flex-direction: column;
     border: solid  rgb(70, 123, 65);
@@ -781,7 +781,7 @@ body {
   border-radius: 20px;
   border-top:0;
   border-width: 5px;
-  box-shadow: -8px 8px rgb(15, 15, 15);
+  box-shadow: -8px 8px 5px rgb(15, 15, 15);
 
  }
 

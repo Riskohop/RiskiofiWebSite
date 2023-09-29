@@ -77,40 +77,13 @@ body {
   font-size: large;
   margin: 1px 0;
 }
-.telegram-text {
-    background-color: rgb(3,156,228);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-.telegram-text:hover {
-    background-color: rgb(255, 255, 255);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
 .telegram-image {
     vertical-align: bottom;
     margin: 0 5px 0 0;
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 }
-.gmail-text {
-    background-color: rgb(255, 113, 113);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-.gmail-text:hover {
-    background-color: rgb(255, 255, 255);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
+
 .gmail-image {
     vertical-align: bottom;
     margin: 0 5px 0 0;
@@ -119,13 +92,6 @@ body {
 }
 .discord-text {
     background-color: rgb(93, 104, 255);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-.discord-text:hover {
-    background-color: rgb(255, 255, 255);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0;
@@ -144,13 +110,6 @@ body {
     padding: 0;
     margin: 0;
 }
-.github-text:hover {
-    background-color: rgb(255, 255, 255);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
 .github-image {
     vertical-align: bottom;
     margin: 0 5px 0 0;
@@ -159,13 +118,6 @@ body {
 }
 .steam-text {
     background-color: rgb(41, 73, 255);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-.steam-text:hover {
-    background-color: rgb(255, 255, 255);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0;
@@ -185,17 +137,741 @@ body {
     padding: 0;
     margin: 0;
 }
-.discordServer-text:hover {
-    background: rgb(255, 255, 255);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0;
-    margin: 0;
-}
 .discordServer-image {
     vertical-align: bottom;
     border-radius: 5px;
     margin: 0 5px 0 0;
     width: 25px;
     height: 25px;
+}
+.gmail-btn {
+  --btn-default-bg: rgba(42, 42, 42, 0.377);
+  --btn-padding: 2px 5px;
+  --btn-hover-bg: rgb(50, 50, 50);
+  border-radius: 5px;
+  --btn-transition: .3s;
+  --btn-letter-spacing: .1rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #ffffff;
+  --default-btn-color: #ff7272;
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 400;
+  --font-family: 'Source Code Pro',monospace;
+  /* 👆 this field should not be empty */
+}
+.telegram-btn {
+  --btn-default-bg: rgba(42, 42, 42, 0.377);
+  --btn-padding: 2px 5px;
+  --btn-hover-bg: rgb(50, 50, 50);
+  border-radius: 5px;
+  --btn-transition: .3s;
+  --btn-letter-spacing: .01rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #ffffff;
+  --default-btn-color: rgb(3,156,228);
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 400;
+  --font-family: 'Source Code Pro',monospace;
+  /* 👆 this field should not be empty */
+}
+.discord-btn {
+  --btn-default-bg: rgba(42, 42, 42, 0.377);
+  --btn-padding: 2px 5px;
+  --btn-hover-bg: rgb(50, 50, 50);
+  border-radius: 5px;
+  --btn-transition: .3s;
+  --btn-letter-spacing: .01rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #ffffff;
+  --default-btn-color: rgb(93, 104, 255);
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 400;
+  --font-family: 'Source Code Pro',monospace;
+  /* 👆 this field should not be empty */
+}
+.github-btn {
+  --btn-default-bg: rgba(42, 42, 42, 0.377);
+  --btn-padding: 2px 5px;
+  --btn-hover-bg: rgb(50, 50, 50);
+  border-radius: 5px;
+  --btn-transition: .3s;
+  --btn-letter-spacing: .01rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #ffffff;
+  --default-btn-color: rgb(186, 186, 186);
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 400;
+  --font-family: 'Source Code Pro',monospace;
+  /* 👆 this field should not be empty */
+}
+.steam-btn {
+  --btn-default-bg: rgba(42, 42, 42, 0.377);
+  --btn-padding: 2px 5px;
+  --btn-hover-bg: rgb(50, 50, 50);
+  border-radius: 5px;
+  --btn-transition: .3s;
+  --btn-letter-spacing: .01rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #ffffff;
+  --default-btn-color: rgb(41, 73, 255);;
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 400;
+  --font-family: 'Source Code Pro',monospace;
+  /* 👆 this field should not be empty */
+}
+.discord-server-btn {
+  --btn-default-bg: rgba(42, 42, 42, 0.377);
+  --btn-padding: 2px 5px;
+  --btn-hover-bg: rgb(50, 50, 50);
+  border-radius: 5px;
+  --btn-transition: .3s;
+  --btn-letter-spacing: .01rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #ffffff;
+  --default-btn-color: rgb(146, 238, 110);
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 400;
+  --font-family: 'Source Code Pro',monospace;
+  /* 👆 this field should not be empty */
+}
+/* button settings 👆 */
+
+.gmail-btn, .telegram-btn, .discord-btn, .github-btn, .steam-btn, .discord-server-btn {
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  display: flex;
+  align-items:center;
+  justify-content:left;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: var(--btn-default-bg);
+  border: none;
+  cursor: pointer;
+  transition: var(--btn-transition);
+  overflow: hidden;
+  box-shadow: var(--btn-shadow);
+}
+
+.gmail-btn span, .telegram-btn span, .discord-btn span, .github-btn span, .steam-btn span, .discord-server-btn span{
+  letter-spacing: var(--btn-letter-spacing);
+  transition: var(--btn-transition);
+  box-sizing: border-box;
+  position: relative;
+  background: inherit;
+}
+
+.gmail-btn span::before, .telegram-btn span::before, .discord-btn span::before, .github-btn span::before, .steam-btn span::before,.discord-server-btn span::before{
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+}
+
+.gmail-btn:hover, .gmail-btn:focus, .telegram-btn:hover, .telegram-btn:focus, .discord-btn:hover, .discord-btn:focus, .github-btn:hover, .github-btn:focus, .steam-btn:hover, .steam-btn:focus, .discord-server-btn:hover, .discord-server-btn:focus {
+  background: var(--btn-hover-bg);
+}
+
+.gmail-btn:hover span, .gmail-btn:focus span, .telegram-btn:hover span, .telegram-btn:focus span, .discord-btn:hover span, .discord-btn:focus span, .github-btn:hover span, .github-btn:focus span, .steam-btn:hover span, .steam-btn:focus span, .discord-server-btn:hover span, .discord-server-btn:focus span{
+  color: var(--hover-btn-color);
+}
+
+.gmail-btn:hover span::before, .gmail-btn:focus span::before{
+  animation: chitchat1 linear both var(--btn-animation-duration);
+}
+.telegram-btn:hover span::before, .telegram-btn:focus span::before {
+  animation: chitchat2 linear both var(--btn-animation-duration);
+}
+.discord-btn:hover span::before, .discord-btn:focus span::before {
+  animation: chitchat3 linear both var(--btn-animation-duration);
+}
+.github-btn:hover span::before, .github-btn:focus span::before {
+  animation: chitchat4 linear both var(--btn-animation-duration);
+}
+.steam-btn:hover span::before, .steam-btn:focus span::before {
+  animation: chitchat5 linear both var(--btn-animation-duration);
+}
+.discord-server-btn:hover span::before, .discord-server-btn:focus span::before {
+  animation: chitchat6 linear both var(--btn-animation-duration);
+}
+@keyframes chitchat1 {
+  0% {
+    content: "#";
+  }
+
+  5% {
+    content: ".";
+  }
+
+  10% {
+    content: "^{";
+  }
+
+  15% {
+    content: "-!";
+  }
+
+  20% {
+    content: "#$_";
+  }
+
+  25% {
+    content: "№:0";
+  }
+
+  30% {
+    content: "#{+.";
+  }
+
+  35% {
+    content: "@}-?";
+  }
+
+  40% {
+    content: "?{4@%";
+  }
+
+  45% {
+    content: "=.,^!";
+  }
+
+  50% {
+    content: "?2@%";
+  }
+
+  55% {
+    content: "\;1}]";
+  }
+
+  60% {
+    content: "?{%:%";
+    right: 0;
+  }
+
+  65% {
+    content: "|{f[4";
+    right: 0;
+  }
+
+  70% {
+    content: "{4%0%";
+    right: 0;
+  }
+
+  75% {
+    content: "'1_0<";
+    right: 0;
+  }
+
+  80% {
+    content: "{0%";
+    right: 0;
+  }
+
+  85% {
+    content: "]>'";
+    right: 0;
+  }
+
+  90% {
+    content: "4";
+    right: 0;
+  }
+
+  95% {
+    content: "2";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+@keyframes chitchat2 {
+  0% {
+    content: "&";
+  }
+
+  5% {
+    content: "<";
+  }
+
+  10% {
+    content: "?4";
+  }
+
+  15% {
+    content: "+(";
+  }
+
+  20% {
+    content: "%)@";
+  }
+
+  25% {
+    content: "5^?";
+  }
+
+  30% {
+    content: "|;=/";
+  }
+
+  35% {
+    content: "_f<}";
+  }
+
+  40% {
+    content: "&',vd"
+  }
+
+  45% {
+    content: "otw}%";
+  }
+
+  50% {
+    content: "]w(9*";
+  }
+
+  55% {
+    content: "_#8?$";
+  }
+
+  60% {
+    content: "<{?8(";
+    right: 0;
+  }
+
+  65% {
+    content: "ulx|n";
+    right: 0;
+  }
+
+  70% {
+    content: "p%{;*";
+    right: 0;
+  }
+
+  75% {
+    content: "_?'b3";
+    right: 0;
+  }
+
+  80% {
+    content: "np.";
+    right: 0;
+  }
+
+  85% {
+    content: "_ob";
+    right: 0;
+  }
+
+  90% {
+    content: "8";
+    right: 0;
+  }
+
+  95% {
+    content: "1";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+@keyframes chitchat3 {
+  0% {
+    content: "$";
+  }
+
+  5% {
+    content: "`";
+  }
+
+  10% {
+    content: "'[";
+  }
+
+  15% {
+    content: "5o";
+  }
+
+  20% {
+    content: "c@b";
+  }
+
+  25% {
+    content: "*@^";
+  }
+
+  30% {
+    content: "8b*?";
+  }
+
+  35% {
+    content: "'\^i";
+  }
+
+  40% {
+    content: "l/]#";
+  }
+
+  45% {
+    content: "&',vd";
+  }
+
+  50% {
+    content: "p%{;*";
+  }
+
+  55% {
+    content: "\;1}]";
+  }
+
+  60% {
+    content: "@@bt";
+    right: 0;
+  }
+
+  65% {
+    content: "|{f[4";
+    right: 0;
+  }
+
+  70% {
+    content: "7s^%}";
+    right: 0;
+  }
+
+  75% {
+    content: "'1_0<";
+    right: 0;
+  }
+
+  80% {
+    content: "]]w";
+    right: 0;
+  }
+
+  85% {
+    content: "]>'";
+    right: 0;
+  }
+
+  90% {
+    content: "4";
+    right: 0;
+  }
+
+  95% {
+    content: "2";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+@keyframes chitchat4 {
+  0% {
+    content: "&";
+  }
+
+  5% {
+    content: "<";
+  }
+
+  10% {
+    content: "?4";
+  }
+
+  15% {
+    content: "+(";
+  }
+
+  20% {
+    content: "%)@";
+  }
+
+  25% {
+    content: "5^?";
+  }
+
+  30% {
+    content: "|;=/";
+  }
+
+  35% {
+    content: "_f<}";
+  }
+
+  40% {
+    content: "&',vd"
+  }
+
+  45% {
+    content: "otw}%";
+  }
+
+  50% {
+    content: "]w(9*";
+  }
+
+  55% {
+    content: "_#8?$";
+  }
+
+  60% {
+    content: "<{?8(";
+    right: 0;
+  }
+
+  65% {
+    content: "ulx|n";
+    right: 0;
+  }
+
+  70% {
+    content: "p%{;*";
+    right: 0;
+  }
+
+  75% {
+    content: "_?'b3";
+    right: 0;
+  }
+
+  80% {
+    content: "np.";
+    right: 0;
+  }
+
+  85% {
+    content: "_ob";
+    right: 0;
+  }
+
+  90% {
+    content: "8";
+    right: 0;
+  }
+
+  95% {
+    content: "1";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+@keyframes chitchat5 {
+  0% {
+    content: "*";
+  }
+
+  5% {
+    content: "!";
+  }
+
+  10% {
+    content: "4t";
+  }
+
+  15% {
+    content: "l^";
+  }
+
+  20% {
+    content: "b6*";
+  }
+
+  25% {
+    content: "@e}";
+  }
+
+  30% {
+    content: "w'v[";
+  }
+
+  35% {
+    content: "@}-?";
+  }
+
+  40% {
+    content: "?{4@%";
+  }
+
+  45% {
+    content: "@*fo";
+  }
+
+  50% {
+    content: "|8c%";
+  }
+
+  55% {
+    content: "\;1}]";
+  }
+
+  60% {
+    content: "?{%:%";
+    right: 0;
+  }
+
+  65% {
+    content: "|{f[4";
+    right: 0;
+  }
+
+  70% {
+    content: "<_zl";
+    right: 0;
+  }
+
+  75% {
+    content: "b>_@";
+    right: 0;
+  }
+
+  80% {
+    content: "{0%";
+    right: 0;
+  }
+
+  85% {
+    content: "f|%";
+    right: 0;
+  }
+
+  90% {
+    content: ";";
+    right: 0;
+  }
+
+  95% {
+    content: ",";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+@keyframes chitchat6 {
+  0% {
+    content: "#";
+  }
+
+  5% {
+    content: "(v%%2@";
+  }
+
+  10% {
+    content: "lx}@$!#!";
+  }
+
+  15% {
+    content: "#sz!@%@";
+  }
+
+  20% {
+    content: "%/|)'|S";
+  }
+
+  25% {
+    content: "%x?*";
+  }
+
+  30% {
+    content: "/r*x#";
+  }
+
+  35% {
+    content: "(8$}y}+@";
+  }
+
+  40% {
+    content: "!|.a+$aL";
+  }
+
+  45% {
+    content: "'_i]u2](";
+  }
+
+  50% {
+    content: "82:?qsn'$^.&(!";
+  }
+
+  55% {
+    content: "_#$2?2!!_ra'|13";
+  }
+
+  60% {
+    content: "}nw@;+f>t:8^$!D";
+    right: 0;
+  }
+
+  65% {
+    content: "d);8_6}@$^*";
+    right: 0;
+  }
+
+  70% {
+    content: "}38d1fu@$";
+    right: 0;
+  }
+
+  75% {
+    content: "'w<>7$";
+    right: 0;
+  }
+
+  80% {
+    content: "(^3#";
+    right: 0;
+  }
+
+  85% {
+    content: ";$<!";
+    right: 0;
+  }
+
+  90% {
+    content: "9s";
+    right: 0;
+  }
+
+  95% {
+    content: "k%";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
 }

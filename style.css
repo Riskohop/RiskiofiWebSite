@@ -14,8 +14,8 @@ body {
     justify-content: space-evenly;
     margin: 10% 17% 0% 17%;
     color: rgb(129, 129, 129);
-  box-shadow: -10px 10px 5px rgb(13, 13, 13);
-
+    box-shadow: -10px 10px 5px rgb(13, 13, 13);
+    
     background-color: #1b1b1b; 
     border-radius: 15px;
     padding: 20px 0px 20px 0px;
@@ -124,6 +124,55 @@ body {
     width: 25px;
     height: 25px;
 }
+.buttons-panel {
+  display: flex;    
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin: 1% 17% 0% 17%;
+    color: rgb(129, 129, 129);
+    box-shadow: -10px 10px 5px rgb(13, 13, 13);
+    
+    background-color: #1b1b1b; 
+    border-radius: 15px;
+    padding: 20px 15px 20px 15px;
+    border: solid;
+    border-top: 0;
+    border-right: 0;
+    border-width: 4px;
+    border-color: #272727;
+}
+.btn-panel {
+  flex: 1 1 max-content;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid rgb(104,207,128);
+  transition: 0.3s ease;
+  user-select: none;
+  --btn-default-bg: rgba(42, 42, 42, 0);
+  --btn-padding: 10px 20px;
+  --btn-hover-bg: rgb(104,207,128);
+  --btn-transition: .01s;
+  --btn-letter-spacing: .01rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #ffffff;
+  --default-btn-color: rgb(104,207,128);
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 400;
+  --font-family: 'Source Code Pro',monospace;
+  /* 👆 this field should not be empty */
+  --border: 1px solid rgb(104,207,128);
+  --justify-content: center;
+}
 .link-btn {
   --btn-default-bg: rgba(42, 42, 42, 0.377);
   --btn-padding: 2px 5px;
@@ -137,49 +186,105 @@ body {
   --hover-btn-color: #ffffff;
   --default-btn-color: rgb(104,207,128);
   --font-size: 16px;
+  --border: none;
   /* 👆 this field should not be empty */
   --font-weight: 400;
   --font-family: 'Source Code Pro',monospace;
+  --justify-content: left;
   /* 👆 this field should not be empty */
 }
 /* button settings 👆 */
 
-.link-btn{
+.link-btn, .btn-panel{
   box-sizing: border-box;
   padding: var(--btn-padding);
   display: flex;
   align-items:center;
-  justify-content:left;
+  justify-content: var(--justify-content);
   color: var(--default-btn-color);
   font: var(--font-weight) var(--font-size) var(--font-family);
   background: var(--btn-default-bg);
-  border: none;
+  border: var(--border);
   cursor: pointer;
   transition: var(--btn-transition);
   overflow: hidden;
   box-shadow: var(--btn-shadow);
+  
 }
-
-.link-btn span{
+.link-btn span, .btn-panel span{
   letter-spacing: var(--btn-letter-spacing);
   transition: var(--btn-transition);
   box-sizing: border-box;
   position: relative;
   background: inherit;
 }
-
-.link-btn span::before{
+.hack-effect span, .hack-effect2 span, .hack-effect3 span, .hack-effect4 span, .hack-effect5 span, .hack-effect6 span{
+  box-sizing: border-box;
+  position: relative;
+  
+  
+  box-sizing: border-box;
+  padding:0;
+  display: flex;
+  align-items:left;
+  justify-content: left;
+  color:rgb(209, 255, 220);
+  font: 400 large 'Source Code Pro';
+  background: #27272700;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s;
+  overflow: hidden;
+  box-shadow: 0;
+  
+}
+.hack-effect span:nth-of-type(1)::before, .hack-effect2 span:nth-of-type(4)::before, .hack-effect3 span:nth-of-type(4)::before, .hack-effect4 span:nth-of-type(2)::before, .hack-effect5 span:nth-of-type(4)::before, .hack-effect6 span:nth-of-type(5)::before {
   box-sizing: border-box;
   position: absolute;
   content: "";
   background: inherit;
+  animation: chitchat11 infinite linear 2.4s;
 }
-
-.link-btn:hover, .link-btn:focus{
+.hack-effect span:nth-of-type(3)::before, .hack-effect2 span:nth-of-type(1)::before, .hack-effect3 span:nth-of-type(3)::before, .hack-effect4 span:nth-of-type(5)::before, .hack-effect5 span:nth-of-type(3)::before, .hack-effect6 span:nth-of-type(4)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat12 infinite linear 2.0s;
+}
+.hack-effect span:nth-of-type(2)::before, .hack-effect2 span:nth-of-type(3)::before, .hack-effect3 span:nth-of-type(2)::before, .hack-effect4 span:nth-of-type(1)::before, .hack-effect5 span:nth-of-type(1)::before, .hack-effect6 span:nth-of-type(3)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat13 infinite linear 3s;
+}
+.hack-effect span:nth-of-type(4)::before, .hack-effect2 span:nth-of-type(5)::before, .hack-effect3 span:nth-of-type(1)::before, .hack-effect4 span:nth-of-type(4)::before, .hack-effect5 span:nth-of-type(2)::before, .hack-effect6 span:nth-of-type(1)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat14 infinite linear 1.6s;
+}
+.hack-effect span:nth-of-type(5)::before, .hack-effect2 span:nth-of-type(2)::before, .hack-effect3 span:nth-of-type(5)::before, .hack-effect4 span:nth-of-type(3)::before, .hack-effect5 span:nth-of-type(5)::before, .hack-effect6 span:nth-of-type(2)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat15 infinite linear 2.6s;
+}
+.link-btn span::before, .btn-panel span::before{
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  
+}
+.link-btn:hover, .link-btn:focus, .btn-panel:hover, .btn-panel:focus{
   background: var(--btn-hover-bg);
 }
 
-.link-btn:hover span, .link-btn:focus span{
+.link-btn:hover span, .link-btn:focus span, .btn-panel:hover, span .btn-panel:focus span{
   color: var(--hover-btn-color);
 }
 
@@ -189,7 +294,7 @@ body {
 .telegram-btn:hover span::before, .telegram-btn:focus span::before {
   animation: chitchat2 linear both var(--btn-animation-duration);
 }
-.discord-btn:hover span::before, .discord-btn:focus span::before {
+.discord-btn:hover span::before, .discord-btn:focus span::before, .btn-panel:hover span::before, .btn-panel:focus span::before{
   animation: chitchat3 linear both var(--btn-animation-duration);
 }
 .github-btn:hover span::before, .github-btn:focus span::before {
@@ -201,7 +306,157 @@ body {
 .discord-server-btn:hover span::before, .discord-server-btn:focus span::before {
   animation: chitchat6 linear both var(--btn-animation-duration);
 }
-@keyframes chitchat1 {
+
+.author-img {
+  width: 195px;
+  height: 280px;
+  border-radius: 20px;
+}
+.card {
+  border: solid rgb(53, 53, 53);
+  width: 195px;
+  height: 280px;
+  margin: 0 0 0 11px;
+  flex: 0 0 content;
+  align-self: center;
+  background: rgba(55, 55, 55, 0.316);
+  border-radius: 20px;
+  border-top:0;
+  border-width: 5px;
+  box-shadow: -8px 8px 5px rgb(15, 15, 15);
+
+ }
+
+ button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(104,207,128);
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid rgb(104,207,128);
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,:focus {
+  color: #ffffff;
+  background: #4AD66D;
+  border: 0px solid #4AD66D;
+  text-shadow: 0 0 5px #ffffff,
+              0 0 10px #ffffff,
+              0 0 20px #ffffff;
+  box-shadow: 0 0 5px #4AD66D,
+              0 0 20px #4AD66D,
+              0 0 50px #4AD66D,
+              0 0 100px #4AD66D;
+}
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #111111;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.spinner {
+  width: 110px;
+  height: 110px;
+  margin: 25% auto 25% auto;
+  animation: spinner-y0fdc1 4s infinite linear;
+  transform-style: preserve-3d;
+ }
+ .spinner-author {
+  width: 110px;
+  height: 110px;
+  animation: spinner-y0fdc1 10s infinite linear;
+  transform-style: preserve-3d;
+ }
+ .cube {
+  align-self: center;
+  margin: 10px 5% 10px 0;
+  flex: 0 1 120px;
+ }
+ .spinner > div, .spinner-author > div {
+  background-color: #2c723e33;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  color:#498b5a;
+
+  animation: chitchat6 1.2s infinite linear ;
+  border: 1px solid #4db868;
+  box-shadow: inset 0 0 1px #4AD66D,
+              0 0 5px #4AD66D,
+              0 0 5px #4AD66D,
+              inset 0 0 1px #4AD66D;
+ }
+
+ .spinner div:nth-of-type(1) {
+  transform: translateZ(-55px) rotateY(180deg);
+ }
+ .spinner-author div:nth-of-type(1)  {
+  transform: translateZ(-55px) rotateY(180deg);
+
+ }
+ .spinner div:nth-of-type(2), .spinner-author div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+ }
+ 
+ .spinner div:nth-of-type(3), .spinner-author div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+ }
+ 
+ .spinner div:nth-of-type(4), .spinner-author div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+ }
+ 
+ .spinner div:nth-of-type(5), .spinner-author div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+ }
+ 
+ .spinner div:nth-of-type(6) {
+  transform: translateZ(55px);
+ }
+ .spinner-author div:nth-of-type(6) {
+  transform: translateZ(55px);
+
+ }
+  @keyframes spinner-y0fdc1 {
+  0% {
+   transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
+  }
+ 
+  50% {
+   transform: rotate(0deg)rotateX(0deg) rotateY(0deg);
+  }
+ 
+  100% {
+   transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
+  }
+ }
+ @keyframes chitchat1 {
   0% {
     content: "#";
   }
@@ -765,148 +1020,477 @@ body {
     right: 0;
   }
 }
-.author-img {
-  width: 195px;
-  height: 280px;
-  border-radius: 20px;
-}
-.card {
-  border: solid rgb(53, 53, 53);
-  width: 195px;
-  height: 280px;
-  margin: 0 0 0 11px;
-  flex: 0 0 content;
-  align-self: center;
-  background: rgba(55, 55, 55, 0.316);
-  border-radius: 20px;
-  border-top:0;
-  border-width: 5px;
-  box-shadow: -8px 8px 5px rgb(15, 15, 15);
 
- }
-
- button {
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #ffffff80;
-  text-shadow: none;
-  background: transparent;
-  box-shadow: transparent;
-  border: 1px solid #ffffff80;
-  transition: 0.5s ease;
-  user-select: none;
-}
-
-#btn:hover,:focus {
-  color: #ffffff;
-  background: #4AD66D;
-  border: 1px solid #4AD66D;
-  text-shadow: 0 0 5px #ffffff,
-              0 0 10px #ffffff,
-              0 0 20px #ffffff;
-  box-shadow: 0 0 5px #4AD66D,
-              0 0 20px #4AD66D,
-              0 0 50px #4AD66D,
-              0 0 100px #4AD66D;
-}
-.preloader {
-  /*фиксированное позиционирование*/
-  position: fixed;
-  /* координаты положения */
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  /* фоновый цвет элемента */
-  background: #111111;
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-  z-index: 1001;
-}
-.loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-
-.loaded .preloader {
-  display: none;
-}
-
-.spinner {
-  width: 220px;
-  height: 220px;
-  margin: 25% auto 25% auto;
-  animation: spinner-y0fdc1 4s infinite linear;
-  transform-style: preserve-3d;
- }
- .spinner-author {
-  width: 110px;
-  height: 110px;
-  animation: spinner-y0fdc1 10s infinite linear;
-  transform-style: preserve-3d;
- }
- .cube {
-  align-self: center;
-  margin: 10px 5% 10px 0;
-  flex: 0 1 120px;
- }
- .spinner > div, .spinner-author > div {
-  background-color: #2c723e33;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  border: 4px solid #4db868;
- }
-
- .spinner div:nth-of-type(1) {
-  transform: translateZ(-110px) rotateY(180deg);
- }
- .spinner-author div:nth-of-type(1)  {
-  transform: translateZ(-55px) rotateY(180deg);
-
- }
- .spinner div:nth-of-type(2), .spinner-author div:nth-of-type(2) {
-  transform: rotateY(-270deg) translateX(50%);
-  transform-origin: top right;
- }
- 
- .spinner div:nth-of-type(3), .spinner-author div:nth-of-type(3) {
-  transform: rotateY(270deg) translateX(-50%);
-  transform-origin: center left;
- }
- 
- .spinner div:nth-of-type(4), .spinner-author div:nth-of-type(4) {
-  transform: rotateX(90deg) translateY(-50%);
-  transform-origin: top center;
- }
- 
- .spinner div:nth-of-type(5), .spinner-author div:nth-of-type(5) {
-  transform: rotateX(-90deg) translateY(50%);
-  transform-origin: bottom center;
- }
- 
- .spinner div:nth-of-type(6) {
-  transform: translateZ(110px);
- }
- .spinner-author div:nth-of-type(6) {
-  transform: translateZ(55px);
-
- }
-  @keyframes spinner-y0fdc1 {
+@keyframes chitchat11 {
   0% {
-   transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
+    content: "_xg}v)f|";
   }
- 
+
+  5% {
+    content: "(v%%2@9";
+  }
+
+  10% {
+    content: "lx}@$!#!";
+  }
+
+  15% {
+    content: "#sz!@%@";
+  }
+
+  20% {
+    content: "%/|)'|S";
+  }
+
+  25% {
+    content: "x%k№7p.";
+  }
+
+  30% {
+    content: "m\>v3s/b";
+  }
+
+  35% {
+    content: "(8$}y}+@";
+  }
+
+  40% {
+    content: "!|.a+$aL";
+  }
+
+  45% {
+    content: "'_i]u2](";
+  }
+
   50% {
-   transform: rotate(0deg)rotateX(0deg) rotateY(0deg);
+    content: "82:?qsn'$^.&(!";
   }
- 
+
+  55% {
+    content: "_#$2?2!!_ra'|13";
+  }
+
+  60% {
+    content: "}nw@;+f>t:8^$!D";
+    right: 0;
+  }
+
+  65% {
+    content: "d);8_6}@$^*";
+    right: 0;
+  }
+
+  70% {
+    content: "}38d1fu@$";
+    right: 0;
+  }
+
+  75% {
+    content: "'w<>7$";
+    right: 0;
+  }
+
+  80% {
+    content: "cv:pakfy";
+    right: 0;
+  }
+
+  85% {
+    content: ".:oy},5{!";
+    right: 0;
+  }
+
+  90% {
+    content: "e1}yы$y%";
+    right: 0;
+  }
+
+  95% {
+    content: "n)>.$>+t";
+    right: 0;
+  }
+
   100% {
-   transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
+    content: "_)2)5tsv";
+    right: 0;
   }
- }
+}
+@keyframes chitchat12 {
+  0% {
+    content: "(38)\*zg";
+  }
+
+  5% {
+    content: "(v%%2@9";
+  }
+
+  10% {
+    content: "#1_*&@c7";
+  }
+
+  15% {
+    content: "b<hf:3jo";
+  }
+
+  20% {
+    content: "5\:+uqdb";
+  }
+
+  25% {
+    content: "*q4>%tdy";
+  }
+
+  30% {
+    content: "m\>v3s/b";
+  }
+
+  35% {
+    content: "r<%*fr[n";
+  }
+
+  40% {
+    content: "![o?&<.|<";
+  }
+
+  45% {
+    content: "![&jz+p[";
+  }
+
+  50% {
+    content: ".:oy},5{";
+  }
+
+  55% {
+    content: "83g$g<yg";
+  }
+
+  60% {
+    content: "[)!4,[b*";
+    right: 0;
+  }
+
+  65% {
+    content: "u?%c{5_@";
+    right: 0;
+  }
+
+  70% {
+    content: "}38d1fu@$";
+    right: 0;
+  }
+
+  75% {
+    content: "%_{'%\1$";
+    right: 0;
+  }
+
+  80% {
+    content: "/&vpSmo_";
+    right: 0;
+  }
+
+  85% {
+    content: "|(1ijjvj";
+    right: 0;
+  }
+
+  90% {
+    content: "e1}yы$y%";
+    right: 0;
+  }
+
+  95% {
+    content: "n)>.$>+t";
+    right: 0;
+  }
+
+  100% {
+    content: "|*y3lzce";
+    right: 0;
+  }
+}
+@keyframes chitchat13 {
+  0% {
+    content: ";gx\\#@t";
+  }
+
+  5% {
+    content: "(v%%2@9";
+  }
+
+  10% {
+    content: "*@dv+qi1";
+  }
+
+  15% {
+    content: "g:_nbf$b";
+  }
+
+  20% {
+    content: "<9%'mS*<";
+  }
+
+  25% {
+    content: "/*r\i!?x";
+  }
+
+  30% {
+    content: "3i)r,;ls";
+  }
+
+  35% {
+    content: "*:}f##]i";
+  }
+
+  40% {
+    content: ",@;26%vy";
+  }
+
+  45% {
+    content: "wo]r}e]m";
+  }
+
+  50% {
+    content: ".:oy},5{";
+  }
+
+  55% {
+    content: "|vp*ubzg";
+  }
+
+  60% {
+    content: ",nA1ls{_*";
+    right: 0;
+  }
+
+  65% {
+    content: "!jt,?7ro";
+    right: 0;
+  }
+
+  70% {
+    content: "^ze<*;s6";
+    right: 0;
+  }
+
+  75% {
+    content: "%_{'%\1$";
+    right: 0;
+  }
+
+  80% {
+    content: "/&vpSmo_";
+    right: 0;
+  }
+
+  85% {
+    content: "&,7#j*$$";
+    right: 0;
+  }
+
+  90% {
+    content: "/j{x|[n!";
+    right: 0;
+  }
+
+  95% {
+    content: "y,aoj:do";
+    right: 0;
+  }
+
+  100% {
+    content: "e@>v'blt";
+    right: 0;
+  }
+}
+@keyframes chitchat14 {
+  0% {
+    content: "u3\+#@)o";
+  }
+
+  5% {
+    content: "6}0#7isf";
+  }
+
+  10% {
+    content: "8+#*a__u";
+  }
+
+  15% {
+    content: "x*\yj.b3";
+  }
+
+  20% {
+    content: ":3v*|k#c";
+  }
+
+  25% {
+    content: "ib%8p'v}";
+  }
+
+  30% {
+    content: "7x.ni$r?";
+  }
+
+  35% {
+    content: "*'{aH[:,";
+  }
+
+  40% {
+    content: ":xef?_:j";
+  }
+
+  45% {
+    content: "wo]r}e]m";
+  }
+
+  50% {
+    content: ".:oy},5{";
+  }
+
+  55% {
+    content: "?.61@7\e";
+  }
+
+  60% {
+    content: ":ees8d(6";
+    right: 0;
+  }
+
+  65% {
+    content: "'>q]%83u";
+    right: 0;
+  }
+
+  70% {
+    content: "^ze<*;s6";
+    right: 0;
+  }
+
+  75% {
+    content: "%_{'%\1$";
+    right: 0;
+  }
+
+  80% {
+    content: "4./?*]1i";
+    right: 0;
+  }
+
+  85% {
+    content: "y/yd.u:s";
+    right: 0;
+  }
+
+  90% {
+    content: "/j{x|[n!";
+    right: 0;
+  }
+
+  95% {
+    content: "j&(:d?_h";
+    right: 0;
+  }
+
+  100% {
+    content: "w4g32k),";
+    right: 0;
+  }
+}
+@keyframes chitchat15 {
+  0% {
+    content: "i?@>c.st";
+  }
+
+  5% {
+    content: "nd8^$c:)";
+  }
+
+  10% {
+    content: "8+#*a__u";
+  }
+
+  15% {
+    content: "x*\yj.b3";
+  }
+
+  20% {
+    content: "dxupr[c_";
+  }
+
+  25% {
+    content: "'p<7+v^^";
+  }
+
+  30% {
+    content: "(9hj[?tr";
+  }
+
+  35% {
+    content: "gg*'.1{2";
+  }
+
+  40% {
+    content: ":xef?_:j";
+  }
+
+  45% {
+    content: "xd1da;cy";
+  }
+
+  50% {
+    content: "$*z&]b_<";
+  }
+
+  55% {
+    content: "isawe(+s";
+  }
+
+  60% {
+    content: "xaw?t6tn";
+    right: 0;
+  }
+
+  65% {
+    content: "j,!<:@[y";
+    right: 0;
+  }
+
+  70% {
+    content: "t6v+5qmk";
+    right: 0;
+  }
+
+  75% {
+    content: "lz>?a0pg";
+    right: 0;
+  }
+
+  80% {
+    content: "4./?*]1i";
+    right: 0;
+  }
+
+  85% {
+    content: "[\0]hn^{";
+    right: 0;
+  }
+
+  90% {
+    content: "r.m:!f/S";
+    right: 0;
+  }
+
+  95% {
+    content: ",xux>h6*";
+    right: 0;
+  }
+
+  100% {
+    content: ":6u@iii\S";
+    right: 0;
+  }
+}
 
 
  

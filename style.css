@@ -106,12 +106,12 @@ body {
   background: inherit;
   animation: chitchat22 ease 2s;
 }
-.description {
+.description-date, .description-status, .description-projects {
   margin: 5px 0 5px 0;
   color: #498b5a;
   font-size: large;
 }
-.description span{
+.description-date span, .description-status span, .description-projects span{
   box-sizing: border-box;
   position: relative;
   
@@ -129,12 +129,26 @@ body {
   padding:0;
   margin: 0;
 }
-.description span::before {
+.description-date span::before {
   box-sizing: border-box;
   position: absolute;
   content: "";
   background: inherit;
-  animation: chitchat23 ease 2s;
+  animation: chitchat23 ease 4s;
+}
+.description-status span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat24 ease 2s;
+}
+.description-projects span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat25 ease 2s;
 }
 .link-list {
     display: block;
@@ -1673,7 +1687,52 @@ body {
     content: "Глушаненко Семён Вадимович";
   }
 }
+@keyframes chitchat23 {
+  0% { /*     15.07.2009 */
+    content: "/!:$!41;24";
+  }
 
+  5% {
+    content: "UG!$7nxa:.";
+  }
+
+  10% {
+    content: "15.!%.!$^*";
+  }
+
+  15% {
+    content: "4!.07.!$^*";
+  }
+
+  20% {
+    content: "$#.*!.2009";
+  }
+
+  25% {
+    content: "1.*7.2009";
+  }
+
+  30% {
+    content: "1.*7.2999";
+  }
+
+  35% {
+    content: "51.7.2909";
+  }
+
+  40% {
+    content: "15.7.2009";
+  }
+
+  45% {
+    content: "15.07.2009";
+  }
+
+ 
+  100% {
+    content: "15.07.2009";
+  }
+}
 
  
  

@@ -52,14 +52,89 @@ body {
     margin: 0;
     color:#B7EFC5;
 }
+.nickname span{
+  box-sizing: border-box;
+  position: relative;
+  
+  box-sizing: border-box;
+  padding:0;
+  display: flex;
+  align-items:left;
+  justify-content: left;
+  color:#B7EFC5;
+  background: #1b1b1b;
+  border: 0;
+  overflow: hidden;
+  box-shadow: 0;
+  font-family: 'Source Code Pro',monospace;
+  font-size: xx-large;
+  margin: 0;
+}
+.nickname span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat21 ease 3.5s;
+}
 .name {
     color: #6ed387;
-    font-size: x-large;
+    
+}
+.name span {
+  box-sizing: border-box;
+  position: relative;
+  
+  box-sizing: border-box;
+  display: flex;
+  align-items:left;
+  justify-content: left;
+  color:#6ed387;
+  background: #1b1b1b;
+  border: 0;
+  overflow: hidden;
+  box-shadow: 0;
+  font-family: 'Source Code Pro',monospace;
+  font-size: x-large;
+  padding:0;
+  margin: 0;
+}
+.name span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat22 ease 2s;
 }
 .description {
   margin: 5px 0 5px 0;
   color: #498b5a;
   font-size: large;
+}
+.description span{
+  box-sizing: border-box;
+  position: relative;
+  
+  box-sizing: border-box;
+  display: flex;
+  align-items:left;
+  justify-content: left;
+  color: #498b5a;
+  background: #1b1b1b;
+  border: 0;
+  overflow: hidden;
+  box-shadow: 0;
+  font-family: 'Source Code Pro',monospace;
+  font-size: large;
+  padding:0;
+  margin: 0;
+}
+.description span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat23 ease 2s;
 }
 .link-list {
     display: block;
@@ -158,7 +233,7 @@ body {
   --btn-default-bg: rgba(42, 42, 42, 0);
   --btn-padding: 10px 20px;
   --btn-hover-bg: rgb(104,207,128);
-  --btn-transition: .01s;
+  --btn-transition: .3s ;
   --btn-letter-spacing: .01rem;
   --btn-animation-duration: 1.2s;
   --btn-shadow-color: rgba(0, 0, 0, 0);
@@ -285,7 +360,7 @@ body {
 }
 
 .link-btn:hover span, .link-btn:focus span, .btn-panel:hover, span .btn-panel:focus span{
-  color: var(--hover-btn-color);
+  /* color: var(--hover-btn-color); */
 }
 
 .gmail-btn:hover span::before, .gmail-btn:focus span::before{
@@ -338,7 +413,7 @@ body {
   background: transparent;
   box-shadow: transparent;
   border: 1px solid rgb(104,207,128);
-  transition: 0.5s ease;
+  transition: 0s ease;
   user-select: none;
 }
 
@@ -443,7 +518,7 @@ body {
   transform: translateZ(55px);
 
  }
-  @keyframes spinner-y0fdc1 {
+@keyframes spinner-y0fdc1 {
   0% {
    transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
   }
@@ -455,8 +530,8 @@ body {
   100% {
    transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
   }
- }
- @keyframes chitchat1 {
+}
+@keyframes chitchat1 {
   0% {
     content: "#";
   }
@@ -1489,6 +1564,113 @@ body {
   100% {
     content: ":6u@iii\S";
     right: 0;
+  }
+}
+@keyframes chitchat21 {
+  0% { /*     Riskiofi */
+    content: "!334!#c@";
+  }
+
+  5% {
+    content: "*^!$5481*&";
+  }
+
+  10% {
+    content: "Ri$!14nnMw";
+  }
+
+  15% {
+    content: "Ri!$81fi";
+  }
+
+  20% {
+    content: "Ri!sk%fi";
+  }
+
+  25% {
+    content: "Riski%fi";
+  }
+
+  30% {
+    content: "R1ski0fi";
+  }
+
+  35% {
+    content: "R1ski0fi";
+  }
+
+  40% {
+    content: "!$!t50fi";
+  }
+
+  45% {
+    content: "Riskiofi";
+  }
+
+  100% {
+    content: "Riskiofi";
+  }
+}
+@keyframes chitchat22 {
+  0% { /*     Глушаненко Семён Вадимович */
+    content: "/!'@w*:?*g:jc@:{wr@9y$b|o9";
+  }
+
+  5% {
+    content: "cl+bh09+!yz<\y2qgyr^uce^.#";
+  }
+
+  10% {
+    content: "Глуd488%4rxg/gён+Вадиm$zm'";
+  }
+
+  15% {
+    content: "7#y.v:@7>|q{+>fz3{e\q<>8ович";
+  }
+
+  20% {
+    content: "7#y.vy9.:%93:*z3{eВадимович";
+  }
+
+  25% {
+    content: "7#y.vy\wm,89*zён Вадимович";
+  }
+
+  30% {
+    content: "f*z*2[3{o!/Семён Вадимович";
+  }
+
+  35% {
+    content: "#eanx|?,ко Семён Вадимович";
+  }
+
+  40% {
+    content: "yq7he}енко Семён Вадимович";
+  }
+
+  45% {
+    content: "z57шаненко Семён Вадимович";
+  }
+
+  50% {
+    content: "1лушаненко Семён Вади#!5ич";
+  }
+
+  55% {
+    content: "Глушаненко Семён Вадимович";
+  }
+
+  60% {
+    content: "Глу%1ненко Се!;@ Вадимович";
+    
+  }
+
+  65% {
+    content: "Глушаненко Семён Вадимович";
+    
+  }
+  100% {
+    content: "Глушаненко Семён Вадимович";
   }
 }
 

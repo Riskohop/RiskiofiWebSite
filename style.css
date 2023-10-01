@@ -4,6 +4,11 @@ body {
     background: #111111;
 
 }
+.bottom-text {
+  color: white;
+
+  margin: 20% 0 20%;
+}
 .btns {
   margin: 3% 20% 0 20%;
 }
@@ -134,21 +139,21 @@ body {
   position: absolute;
   content: "";
   background: inherit;
-  animation: chitchat23 ease 4s;
+  animation: chitchat23 ease 5.2s;
 }
 .description-status span::before {
   box-sizing: border-box;
   position: absolute;
   content: "";
   background: inherit;
-  animation: chitchat24 ease 2s;
+  animation: chitchat24 ease 3.5s;
 }
 .description-projects span::before {
   box-sizing: border-box;
   position: absolute;
   content: "";
   background: inherit;
-  animation: chitchat25 ease 2s;
+  animation: chitchat25 ease 3.5s;
 }
 .link-list {
     display: block;
@@ -246,20 +251,20 @@ body {
   user-select: none;
   --btn-default-bg: rgba(42, 42, 42, 0);
   --btn-padding: 10px 20px;
-  --btn-hover-bg: rgb(104,207,128);
+  --btn-hover-bg: #4AD66D;
   --btn-transition: .3s ;
   --btn-letter-spacing: .01rem;
   --btn-animation-duration: 1.2s;
   --btn-shadow-color: rgba(0, 0, 0, 0);
   --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
   --hover-btn-color: #ffffff;
-  --default-btn-color: rgb(104,207,128);
+  --default-btn-color: #4AD66D;
   --font-size: 16px;
   /* 👆 this field should not be empty */
   --font-weight: 400;
   --font-family: 'Source Code Pro',monospace;
   /* 👆 this field should not be empty */
-  --border: 1px solid rgb(104,207,128);
+  --border: 1px solid #4AD66D;
   --justify-content: center;
 }
 .link-btn {
@@ -317,7 +322,7 @@ body {
   display: flex;
   align-items:left;
   justify-content: left;
-  color:rgb(209, 255, 220);
+  color:#4AD66D;
   font: 400 large 'Source Code Pro';
   background: #27272700;
   border: 0;
@@ -422,11 +427,11 @@ body {
   border-radius: 8px;
   font-size: 17px;
   font-weight: 500;
-  color: rgb(104,207,128);
+  color: #4AD66D;
   text-shadow: none;
   background: transparent;
   box-shadow: transparent;
-  border: 1px solid rgb(104,207,128);
+  border: 1px solid #4AD66D;
   transition: 0s ease;
   user-select: none;
 }
@@ -1731,6 +1736,61 @@ body {
  
   100% {
     content: "15.07.2009";
+  }
+}
+@keyframes chitchat24 {
+  0% { /*     Unity Junior */
+    content: "cjx\r'nm#\_]";
+  }
+
+  5% {
+    content: "&3l'@}s[<exv";
+  }
+
+  10% {
+    content: "28vm^os1f]|0";
+  }
+
+  15% {
+    content: "g^n*z7{ndo8u";
+  }
+
+  20% {
+    content: "U0)v:Jc:|t?R";
+  }
+
+  25% {
+    content: "U;I9*Jx+(7fR";
+  }
+
+  30% {
+    content: "UIIIJ)l'7z\R";
+  }
+
+  35% {
+    content: "UI{yJu5?_dhr";
+  }
+
+  40% {
+    content: "Ui{yju5?_dhr";
+  }
+  45% {
+    content: "Uni*cxk@h}qs";
+  }
+  50% {
+    content: "Unity p#x3og";
+  }
+  55% {
+    content: "Unity ,}5o%or";
+  }
+  60% {
+    content: "Unity 7%bior";
+  }
+  65% {
+    content: "Unity Junior";
+  }
+  100% {
+    content: "Unity Junior";
   }
 }
 

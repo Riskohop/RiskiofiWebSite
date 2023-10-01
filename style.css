@@ -153,7 +153,7 @@ body {
   position: absolute;
   content: "";
   background: inherit;
-  animation: chitchat25 ease 3.5s;
+  animation: chitchat25 ease 2s;
 }
 .link-list {
     display: block;
@@ -249,10 +249,10 @@ body {
   border: 1px solid rgb(104,207,128);
   transition: 0.3s ease;
   user-select: none;
-  --btn-default-bg: rgba(42, 42, 42, 0);
+  --btn-default-bg: #1b1b1b;
   --btn-padding: 10px 20px;
   --btn-hover-bg: #4AD66D;
-  --btn-transition: .3s ;
+  --btn-transition: . 3s ;
   --btn-letter-spacing: .01rem;
   --btn-animation-duration: 1.2s;
   --btn-shadow-color: rgba(0, 0, 0, 0);
@@ -268,24 +268,34 @@ body {
   --justify-content: center;
 }
 .link-btn {
-  --btn-default-bg: rgba(42, 42, 42, 0.377);
-  --btn-padding: 2px 5px;
-  --btn-hover-bg: rgb(50, 50, 50);
-  border-radius: 5px;
+  flex: 1 1 min-content;
+  padding: 1px 1px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  margin: 0 7px 0 0;
+  transition: 0.3s ease;
+  user-select: none;
+  --btn-default-bg: #1b1b1b00;
+  --btn-padding: 3px 3px;
+  --btn-hover-bg: #4AD66D;
   --btn-transition: .3s;
   --btn-letter-spacing: .01rem;
   --btn-animation-duration: 1.2s;
   --btn-shadow-color: rgba(0, 0, 0, 0);
   --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
   --hover-btn-color: #ffffff;
-  --default-btn-color: rgb(104,207,128);
+  --default-btn-color: #4AD66D;
   --font-size: 16px;
-  --border: none;
   /* 👆 this field should not be empty */
   --font-weight: 400;
   --font-family: 'Source Code Pro',monospace;
-  --justify-content: left;
   /* 👆 this field should not be empty */
+  --border: none;
+  --justify-content: left;
 }
 /* button settings 👆 */
 
@@ -297,10 +307,10 @@ body {
   justify-content: var(--justify-content);
   color: var(--default-btn-color);
   font: var(--font-weight) var(--font-size) var(--font-family);
-  background: var(--btn-default-bg);
+  background:var(--btn-default-bg);
   border: var(--border);
   cursor: pointer;
-  transition: var(--btn-transition);
+  transition: 0.3s;
   overflow: hidden;
   box-shadow: var(--btn-shadow);
   
@@ -379,7 +389,7 @@ body {
 }
 
 .link-btn:hover span, .link-btn:focus span, .btn-panel:hover, span .btn-panel:focus span{
-  /* color: var(--hover-btn-color); */
+  color: var(--hover-btn-color); 
 }
 
 .gmail-btn:hover span::before, .gmail-btn:focus span::before{
@@ -432,7 +442,7 @@ body {
   background: transparent;
   box-shadow: transparent;
   border: 1px solid #4AD66D;
-  transition: 0s ease;
+  transition: 0.1s ease;
   user-select: none;
 }
 
@@ -1789,8 +1799,70 @@ body {
   65% {
     content: "Unity Junior";
   }
+  70% {
+    content: "Unity Error";
+  }
   100% {
     content: "Unity Junior";
+  }
+}
+@keyframes chitchat25 {
+  0% {
+    content: "b%@h'v/@^(r|r.&dfi#!|@4s8yga;m&lm]n2:>dc>7g!#'12/rwynw^y:+ikm8+y#>d.2z6@w?lfe&'/_,/8a}wu";
+  }
+  5% {
+    content: "qjjrr##$!bk+$2;4r(ni($*g/3>#2/;#sh)h!u!zx4kgmg1s1*%|]63;&?]m8]_%isp^:'+6$**w*}9k03c5(}%,";
+  }
+  10% {
+    content: "4o!_%5o'xzq,}!3_dtt'cx&(^t}rzw1*n)?5xz,+>)o7:9%/nkkmy%d}a%9z@$o/kh7/vi}wm%qn!zhyt.7@}s'b";
+  }
+  15% {
+    content: "v}l$)+95%(ngjf]ht(*r?%1/1f|:uz%},prq;?ap$y718yz!'):4rez3l5$36:bf+(u6dw,e7>|//!|wx!;o^l;m";
+  }
+  20% {
+    content: "Proj'#,tp4vh>sos;3l@vm6'eft7h3a96pe4sg_c'oftc'|4hp#6f|pgu9_7^)i95&&himz!sbob9+}!tmfbzlfq";
+  }
+  25% {
+    content: "Proj*,qx6iuvi3y*,c!zt(?4n_/s0>#*88/((j|kqa!6y0u_'p(#$ssln(v2mo!u^:4k5v##3!}8(q31@$w*b#te";
+  }
+  30% {
+    content: "Projec3!n*&o#6*>5?+4?9_z%o1>x#+*rj99#19)b,n?g*4*+p5!!r4?d?%;y_4*jubp&px%3b5v+9t9|hnflete";
+  }
+  35% {
+    content: "Project: h)$_''!}8'9ens2@jkrunovp12nt;lr&|1u8v+z}/bz#vepvc?q>63ned0yydaqp:e%q#1?;j5sllete";
+  }
+  40% {
+    content: "Project: Fi@%pm,,6:d?p9^o.hg*)h1*ac(9f1'*0jwvzxv.e?*05+p;@3o>]@tn:wbp&@%hnb!ed$2?*Pallete";
+  }
+  45% {
+    content: "Project: Five*kyy(,5!u&%/*d;*vl*_n3:45#0?$'+n:72*u]4#jx13|6rij(&+:z/nc3*/&5j9(vq, Pallete";
+  }
+  50% {
+    content: "Project: Five N!+c_,c&.4&$h(8y%omx!l+&+}yncl$!2(swr*m6.u'qqz?k9,*985n9t5i*88$+fe, Pallete";
+  }
+  55% {
+    content: "Project: Five Nig+i2n7cy1g},;aex)wh7dpw.#p)*j@o.u6ni_e78o48fb46/o*68#g7*3qs@Life, Pallete";
+  }
+  60% {
+    content: "Project: Five Nightu79gy_;d:wq%e|%p6e8|+g+]kqy!/j}s7v!>ts|7x75wyk0/19l3yy|meLife, Pallete";
+  }
+  65% {
+    content: "Project: Five Nights At Momn4!|2#)'x9b/y,9'p_u*xi@1)$7&x)ab$!#_$5$k&^&, GameLife, Pallete";
+  }
+  70% {
+    content: "Project: Five Nights At Mom, Futurel50*x|el/e#*v%kfm:af4:(/v}$tleepers, GameLife, Pallete";
+  }
+  75% {
+    content: "Project: Five Nights At Mom, Future Cube,w*k>*#|*!d_w1(}Dodge Sweepers, GameLife, Pallete";
+  }
+  80% {
+    content: "Project: Five Nights At Mom, Future Cube, Spa@$86!attle, Dodge Sweepers, GameLife, Pallete";
+  }
+  85% {
+    content: "Project: Five Nights At Mom, Future Cube, SpaceBattle, Dodge Sweepers, GameLife, Pallete";
+  }
+  100% {
+    content: "Projects: Five Nights At Mom, FutureCube, SpaceBattle, Dodge Sweepers, GameLife, Pallete";
   }
 }
 

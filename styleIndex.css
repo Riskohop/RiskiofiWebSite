@@ -7,7 +7,7 @@ body {
 .bottom-text {
   color: white;
 
-  margin: 20% 0 20%;
+  margin: auto 0 auto 0;
 }
 .btns {
   margin: 3% 20% 0 20%;
@@ -22,7 +22,7 @@ body {
     box-shadow: -10px 10px 5px rgb(13, 13, 13);
     
     background-color: #1b1b1b; 
-    border-radius: 15px;
+    border-radius: 0px;
     padding: 20px 0px 20px 0px;
     border: solid;
     border-top: 0;
@@ -38,7 +38,7 @@ body {
     
     flex-direction: column;
     border: solid  rgb(70, 123, 65);
-    border-radius: 11px;
+    border-radius: 0px;
     outline: 0;
     border-width: 3px;
     border-right: 0;
@@ -159,7 +159,7 @@ body {
     display: block;
     list-style-type: none;
     padding: 0;
-    margin: 0 0 0 0;
+    margin: 0 2% 0 0;
 }
 .link-list2 {
     display: block;
@@ -169,7 +169,7 @@ body {
 }
 .links {
     align-self: bottom;
-    margin: 0;
+    margin: 0 0 1% 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -184,8 +184,8 @@ body {
 .telegram-image {
     vertical-align: bottom;
     margin: 0 5px 0 0;
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
 }
 .gmail-image {
     vertical-align: bottom;
@@ -196,8 +196,8 @@ body {
 .discord-image {
     vertical-align: bottom;
     margin: 0 5px 0 0;
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
 }
 .github-image {
     vertical-align: bottom;
@@ -221,6 +221,7 @@ body {
 .buttons-panel {
   display: flex;    
     flex-wrap: wrap;
+    
     gap: 10px;
     justify-content: space-evenly;
     margin: 1% 17% 0% 17%;
@@ -228,7 +229,7 @@ body {
     box-shadow: -10px 10px 5px rgb(13, 13, 13);
     
     background-color: #1b1b1b; 
-    border-radius: 15px;
+    border-radius: 0px;
     padding: 20px 15px 20px 15px;
     border: solid;
     border-top: 0;
@@ -240,7 +241,7 @@ body {
   flex: 1 1 max-content;
   padding: 10px 20px;
   text-transform: uppercase;
-  border-radius: 8px;
+  border-radius: 0px;
   font-size: 17px;
   font-weight: 500;
   text-shadow: none;
@@ -249,8 +250,29 @@ body {
   border: 1px solid rgb(104,207,128);
   transition: 0.3s ease;
   user-select: none;
+  
   --btn-default-bg: #1b1b1b;
   --btn-padding: 10px 20px;
+  --btn-hover-bg: #4AD66D;
+  --btn-transition: . 3s ;
+  --btn-letter-spacing: .01rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgb(0, 0, 0);
+  --hover-btn-color: #ffffff;
+  --default-btn-color: #4AD66D;
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 400;
+  --font-family: 'Source Code Pro',monospace;
+  /* 👆 this field should not be empty */
+  --border: 1px solid #4AD66D;
+  --justify-content: center;
+}
+.link-btn {
+  margin: 1% 0 0 0;
+  flex: 1 1 max-content;
+  --btn-default-bg: #1b1b1b;
+  --btn-padding: 0px 0px;
   --btn-hover-bg: #4AD66D;
   --btn-transition: . 3s ;
   --btn-letter-spacing: .01rem;
@@ -264,38 +286,7 @@ body {
   --font-weight: 400;
   --font-family: 'Source Code Pro',monospace;
   /* 👆 this field should not be empty */
-  --border: 1px solid #4AD66D;
-  --justify-content: center;
-}
-.link-btn {
-  flex: 1 1 min-content;
-  padding: 1px 1px;
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: 500;
-  text-shadow: none;
-  background: transparent;
-  box-shadow: transparent;
-  margin: 0 7px 0 0;
-  transition: 0.3s ease;
-  user-select: none;
-  --btn-default-bg: #1b1b1b00;
-  --btn-padding: 3px 3px;
-  --btn-hover-bg: #4AD66D;
-  --btn-transition: .3s;
-  --btn-letter-spacing: .01rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgba(0, 0, 0, 0);
-  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #ffffff;
-  --default-btn-color: #4AD66D;
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 400;
-  --font-family: 'Source Code Pro',monospace;
-  /* 👆 this field should not be empty */
   --border: none;
-  --justify-content: left;
 }
 /* button settings 👆 */
 
@@ -424,7 +415,7 @@ body {
   flex: 0 0 content;
   align-self: center;
   background: rgba(55, 55, 55, 0.316);
-  border-radius: 20px;
+  border-radius: 0px;
   border-top:0;
   border-width: 5px;
   box-shadow: -8px 8px 5px rgb(15, 15, 15);
@@ -434,7 +425,7 @@ body {
  button {
   padding: 10px 20px;
   text-transform: uppercase;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 17px;
   font-weight: 500;
   color: #4AD66D;
@@ -484,13 +475,13 @@ body {
   width: 110px;
   height: 110px;
   margin: 25% auto 25% auto;
-  animation: spinner-y0fdc1 4s infinite linear;
+  animation: spinner-y0fdc1 16s infinite linear;
   transform-style: preserve-3d;
  }
  .spinner-author {
   width: 110px;
   height: 110px;
-  animation: spinner-y0fdc1 10s infinite linear;
+  animation: spinner-y0fdc1 40s infinite linear;
   transform-style: preserve-3d;
  }
  .cube {
@@ -547,17 +538,34 @@ body {
   transform: translateZ(55px);
 
  }
-@keyframes spinner-y0fdc1 {
+  
+ @keyframes spinner-y0fdc1 {
   0% {
    transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
   }
- 
-  50% {
+  12.5% {
    transform: rotate(0deg)rotateX(0deg) rotateY(0deg);
   }
- 
+  25% {
+    transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
+  }
+  37.5% {
+    transform: rotate(0deg)rotateX(0) rotateY(0);
+  }
+  50% {
+      transform: rotate(45deg)rotateX(-180deg) rotateY(-180deg);
+    }
+  62.5% {
+      transform: rotate(0) rotateX(0) rotateY(0);
+  }
+  75% {
+      transform: rotate(-45deg) rotateX(180deg) rotateY(180deg);
+  }
+  87.5% {
+      transform: rotate(0) rotateX(0) rotateY(0);
+  }
   100% {
-   transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
+      transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
   }
 }
 @keyframes chitchat1 {

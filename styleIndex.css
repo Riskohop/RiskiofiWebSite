@@ -4,11 +4,6 @@ body {
     background: #111111;
 
 }
-.bottom-text {
-  color: white;
-
-  margin: auto 0 auto 0;
-}
 .btns {
   margin: 3% 20% 0 20%;
 }
@@ -421,7 +416,7 @@ body {
   box-shadow: -8px 8px 5px rgb(15, 15, 15);
 
  }
-
+ 
  button {
   padding: 10px 20px;
   text-transform: uppercase;
@@ -440,7 +435,7 @@ body {
 #btn:hover,:focus {
   color: #ffffff;
   background: #4AD66D;
-  border: 0px solid #4AD66D;
+  border: 1px solid #4AD66D;
   text-shadow: 0 0 5px #ffffff,
               0 0 10px #ffffff,
               0 0 20px #ffffff;

@@ -135,19 +135,6 @@ button {
               0 0 100px #4AD66D;
               cursor: pointer;
 }
-/* .work {
-    margin: 10% 40% 0 38%;
-    height: 400px;
-    width: 300px;
-    background-color: #1f1f1f;
-    border: 6px solid #3a3a3a;
-    box-shadow: -10px 10px 15px #000000;
-}
-.working {
-    margin: 0 40% 0 38%;
-    font-family: 'Source Code Pro';
-    color:#b1b1b1;
-} */
 /*Загрузочный экран*/
 .preloader {
     /*фиксированное позиционирование*/

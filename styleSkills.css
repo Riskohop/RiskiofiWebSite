@@ -63,10 +63,10 @@ body {
 }
 .projects-btn {
   flex: 1 1 min-content;
-  margin: 0 3% 0 11%;
+  margin: 0 0 0 0;
   padding: 10px 20px;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 17px;
   font-weight: 500;
   color: #4AD66D;
@@ -79,10 +79,10 @@ body {
 }
 .main-btn {
 flex: 1 1 min-content;
-margin: 0 11% 0 3%;
+margin: 0 0 0 0;
 padding: 10px 20px;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 17px;
   font-weight: 500;
   color: #4AD66D;
@@ -96,12 +96,13 @@ padding: 10px 20px;
 .div-buttons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   box-shadow: -10px 10px 5px rgb(13, 13, 13);
   border: 4px solid #272727;
   border-right: 0;
   border-top: 0;
   margin: 1% 25%;
-  padding: 1% 0;
+  padding: 1% 1%;
   background-color: #1b1b1b;
   font-family: 'Source Code Pro', monospace;
   color:#B7EFC5;

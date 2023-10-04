@@ -1,654 +1,765 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #111111;
+  margin: 0;
+  padding: 0;
+  background: #111111;
+}
+.h1-div {
+display: flex;
+flex-direction: column;
+justify-content: left;
+align-items: left;
+box-shadow: -10px 10px 5px rgb(13, 13, 13);
+border: 4px solid #272727;
+border-right: 0;
+border-top: 0;
+margin: 10% 25% 0 25%;
+padding: 2% 0;
+background-color: #1b1b1b;
+font-family: 'Source Code Pro', monospace;
+color:#B7EFC5;
+}
+.h1-div h1 {
+margin: 0 10%;
+border: 3px solid #272727;
+box-shadow: 0px 5px 5px rgb(13, 13, 13);
+border-left: 0;
+border-right: 0;
+border-top: 0; 
+text-align: center;
 }
 
-
-.work {
-    margin: 10% 40% 0 38%;
-    height: 400px;
-    width: 300px;
-    background-color: #1f1f1f;
-    border: 6px solid #3a3a3a;
-    box-shadow: -10px 10px 15px #000000;
+.h1-div div{
+display: flex;
+flex-direction: column;
+margin: 2% 4% 2% 1%;
+padding: 1% 0 0 1%;
+color: #6ed387;
+border: 3px solid rgb(42, 73, 39);
+box-shadow: -5px 5px 5px rgb(13, 13, 13);
+border-right: 0;
+border-top: 0; 
 }
-.working {
-    margin: 0 40% 0 38%;
-    font-family: 'Source Code Pro';
-    color:#b1b1b1;
+.h1-div div h2 {
+padding: 0;
+margin: 0;
+}
+.h1-div div h3 {
+color:#5fb876;
+font-size: 22px;
+padding: 0;
+margin: 0 0 4% 0;
+}
+.h1-div div h4, .h1-div div a{
+color:#407a50;
+font-size: large;
+padding: 0;
+
+}
+.skill-btn {
+flex: 1 1 min-content;
+margin: 0 0 0 0;
+padding: 10px 20px;
+text-transform: uppercase;
+border-radius: 0px;
+font-size: 17px;
+font-weight: 500;
+color: #4AD66D;
+text-shadow: none;
+background: transparent;
+box-shadow: transparent;
+border: 1px solid #4AD66D;
+transition: 0.3s ease;
+user-select: none;
+}
+.main-btn {
+flex: 1 1 min-content;
+margin: 0 0 0 0;
+padding: 10px 20px;
+text-transform: uppercase;
+border-radius: 0px;
+font-size: 17px;
+font-weight: 500;
+color: #4AD66D;
+text-shadow: none;
+background: transparent;
+box-shadow: transparent;
+border: 1px solid #4AD66D;
+transition: 0.3s ease;
+user-select: none;
+}
+.div-buttons {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+box-shadow: -10px 10px 5px rgb(13, 13, 13);
+border: 4px solid #272727;
+border-right: 0;
+border-top: 0;
+margin: 1% 25%;
+padding: 1% 1%;
+background-color: #1b1b1b;
+font-family: 'Source Code Pro', monospace;
+color:#B7EFC5;
+}
+button {
+padding: 10px 20px;
+text-transform: uppercase;
+border-radius: 0px;
+font-size: 17px;
+font-weight: 500;
+color: #4AD66D;
+text-shadow: none;
+background: transparent;
+box-shadow: transparent;
+border: 1px solid #4AD66D;
+transition: 0.3s ease;
+user-select: none;
+}
+
+.main-btn:hover, .main-btn:focus, .skill-btn:hover, .skill-btn:focus{
+color: #ffffff;
+background: #4AD66D;
+border: 1px solid #4AD66D;
+text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff,
+            0 0 20px #ffffff;
+box-shadow: 0 0 5px #4AD66D,
+            0 0 20px #4AD66D,
+            0 0 50px #4AD66D,
+            0 0 100px #4AD66D;
+            cursor: pointer;
 }
 /*Загрузочный экран*/
 .preloader {
-    /*фиксированное позиционирование*/
-    position: fixed;
-    /* координаты положения */
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    /* фоновый цвет элемента */
-    background: #111111;
-    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-    z-index: 1001;
-  }
-  .loaded_hiding .preloader {
-    transition: 0.3s opacity;
-    opacity: 0;
-  }
-  
-  .loaded .preloader {
-    display: none;
-  }
-  
-  .spinner {
-    width: 110px;
-    height: 110px;
-    margin: 25% auto 25% auto;
-    animation: spinner-y0fdc1 16s infinite linear;
-    transform-style: preserve-3d;
-   }
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #111111;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
 
-   .spinner > div {
-    background-color: #2c723e33;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    color:#498b5a;
+.loaded .preloader {
+  display: none;
+}
+
+.spinner {
+  width: 110px;
+  height: 110px;
+  margin: 25% auto 25% auto;
+  animation: spinner-y0fdc1 16s infinite linear;
+  transform-style: preserve-3d;
+ }
+
+ .spinner > div {
+  background-color: #2c723e33;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  color:#498b5a;
+
+  animation: chitchat6 1.2s infinite linear ;
+  border: 1px solid #4db868;
+  box-shadow: inset 0 0 1px #4AD66D,
+              0 0 5px #4AD66D,
+              0 0 5px #4AD66D,
+              inset 0 0 1px #4AD66D;
+ }
+ .hack-effect span, .hack-effect2 span, .hack-effect3 span, .hack-effect4 span, .hack-effect5 span, .hack-effect6 span{
+  box-sizing: border-box;
+  position: relative;
   
-    animation: chitchat6 1.2s infinite linear ;
-    border: 1px solid #4db868;
-    box-shadow: inset 0 0 1px #4AD66D,
-                0 0 5px #4AD66D,
-                0 0 5px #4AD66D,
-                inset 0 0 1px #4AD66D;
-   }
-   .hack-effect span, .hack-effect2 span, .hack-effect3 span, .hack-effect4 span, .hack-effect5 span, .hack-effect6 span{
-    box-sizing: border-box;
-    position: relative;
-    
-    
-    box-sizing: border-box;
-    padding:0;
-    display: flex;
-    align-items:left;
-    justify-content: left;
-    color:#4AD66D;
-    font: 400 large 'Source Code Pro';
-    background: #27272700;
-    border: 0;
-    cursor: pointer;
-    transition: 0.2s;
-    overflow: hidden;
-    box-shadow: 0;
-    
+  
+  box-sizing: border-box;
+  padding:0;
+  display: flex;
+  align-items:left;
+  justify-content: left;
+  color:#4AD66D;
+  font: 400 large 'Source Code Pro';
+  background: #27272700;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s;
+  overflow: hidden;
+  box-shadow: 0;
+  
+}
+ .spinner div:nth-of-type(1) {
+  transform: translateZ(-55px) rotateY(180deg);
+ }
+ .spinner-author div:nth-of-type(1)  {
+  transform: translateZ(-55px) rotateY(180deg);
+
+ }
+ .spinner div:nth-of-type(2), .spinner-author div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+ }
+ 
+ .spinner div:nth-of-type(3), .spinner-author div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+ }
+ 
+ .spinner div:nth-of-type(4), .spinner-author div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+ }
+ 
+ .spinner div:nth-of-type(5), .spinner-author div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+ }
+ 
+ .spinner div:nth-of-type(6) {
+  transform: translateZ(55px);
+ }
+ .spinner-author div:nth-of-type(6) {
+  transform: translateZ(55px);
+
+ }
+ .hack-effect span:nth-of-type(1)::before, .hack-effect2 span:nth-of-type(4)::before, .hack-effect3 span:nth-of-type(4)::before, .hack-effect4 span:nth-of-type(2)::before, .hack-effect5 span:nth-of-type(4)::before, .hack-effect6 span:nth-of-type(5)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat11 infinite linear 2.4s;
+}
+.hack-effect span:nth-of-type(3)::before, .hack-effect2 span:nth-of-type(1)::before, .hack-effect3 span:nth-of-type(3)::before, .hack-effect4 span:nth-of-type(5)::before, .hack-effect5 span:nth-of-type(3)::before, .hack-effect6 span:nth-of-type(4)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat12 infinite linear 2.0s;
+}
+.hack-effect span:nth-of-type(2)::before, .hack-effect2 span:nth-of-type(3)::before, .hack-effect3 span:nth-of-type(2)::before, .hack-effect4 span:nth-of-type(1)::before, .hack-effect5 span:nth-of-type(1)::before, .hack-effect6 span:nth-of-type(3)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat13 infinite linear 3s;
+}
+.hack-effect span:nth-of-type(4)::before, .hack-effect2 span:nth-of-type(5)::before, .hack-effect3 span:nth-of-type(1)::before, .hack-effect4 span:nth-of-type(4)::before, .hack-effect5 span:nth-of-type(2)::before, .hack-effect6 span:nth-of-type(1)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat14 infinite linear 1.6s;
+}
+.hack-effect span:nth-of-type(5)::before, .hack-effect2 span:nth-of-type(2)::before, .hack-effect3 span:nth-of-type(5)::before, .hack-effect4 span:nth-of-type(3)::before, .hack-effect5 span:nth-of-type(5)::before, .hack-effect6 span:nth-of-type(2)::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+  animation: chitchat15 infinite linear 2.6s;
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+   transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
   }
-   .spinner div:nth-of-type(1) {
-    transform: translateZ(-55px) rotateY(180deg);
-   }
-   .spinner-author div:nth-of-type(1)  {
-    transform: translateZ(-55px) rotateY(180deg);
-  
-   }
-   .spinner div:nth-of-type(2), .spinner-author div:nth-of-type(2) {
-    transform: rotateY(-270deg) translateX(50%);
-    transform-origin: top right;
-   }
-   
-   .spinner div:nth-of-type(3), .spinner-author div:nth-of-type(3) {
-    transform: rotateY(270deg) translateX(-50%);
-    transform-origin: center left;
-   }
-   
-   .spinner div:nth-of-type(4), .spinner-author div:nth-of-type(4) {
-    transform: rotateX(90deg) translateY(-50%);
-    transform-origin: top center;
-   }
-   
-   .spinner div:nth-of-type(5), .spinner-author div:nth-of-type(5) {
-    transform: rotateX(-90deg) translateY(50%);
-    transform-origin: bottom center;
-   }
-   
-   .spinner div:nth-of-type(6) {
-    transform: translateZ(55px);
-   }
-   .spinner-author div:nth-of-type(6) {
-    transform: translateZ(55px);
-  
-   }
-   .hack-effect span:nth-of-type(1)::before, .hack-effect2 span:nth-of-type(4)::before, .hack-effect3 span:nth-of-type(4)::before, .hack-effect4 span:nth-of-type(2)::before, .hack-effect5 span:nth-of-type(4)::before, .hack-effect6 span:nth-of-type(5)::before {
-    box-sizing: border-box;
-    position: absolute;
-    content: "";
-    background: inherit;
-    animation: chitchat11 infinite linear 2.4s;
+  12.5% {
+   transform: rotate(0deg)rotateX(0deg) rotateY(0deg);
   }
-  .hack-effect span:nth-of-type(3)::before, .hack-effect2 span:nth-of-type(1)::before, .hack-effect3 span:nth-of-type(3)::before, .hack-effect4 span:nth-of-type(5)::before, .hack-effect5 span:nth-of-type(3)::before, .hack-effect6 span:nth-of-type(4)::before {
-    box-sizing: border-box;
-    position: absolute;
-    content: "";
-    background: inherit;
-    animation: chitchat12 infinite linear 2.0s;
+  25% {
+    transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
   }
-  .hack-effect span:nth-of-type(2)::before, .hack-effect2 span:nth-of-type(3)::before, .hack-effect3 span:nth-of-type(2)::before, .hack-effect4 span:nth-of-type(1)::before, .hack-effect5 span:nth-of-type(1)::before, .hack-effect6 span:nth-of-type(3)::before {
-    box-sizing: border-box;
-    position: absolute;
-    content: "";
-    background: inherit;
-    animation: chitchat13 infinite linear 3s;
+  37.5% {
+    transform: rotate(0deg)rotateX(0) rotateY(0);
   }
-  .hack-effect span:nth-of-type(4)::before, .hack-effect2 span:nth-of-type(5)::before, .hack-effect3 span:nth-of-type(1)::before, .hack-effect4 span:nth-of-type(4)::before, .hack-effect5 span:nth-of-type(2)::before, .hack-effect6 span:nth-of-type(1)::before {
-    box-sizing: border-box;
-    position: absolute;
-    content: "";
-    background: inherit;
-    animation: chitchat14 infinite linear 1.6s;
+  50% {
+      transform: rotate(45deg)rotateX(-180deg) rotateY(-180deg);
+    }
+  62.5% {
+      transform: rotate(0) rotateX(0) rotateY(0);
   }
-  .hack-effect span:nth-of-type(5)::before, .hack-effect2 span:nth-of-type(2)::before, .hack-effect3 span:nth-of-type(5)::before, .hack-effect4 span:nth-of-type(3)::before, .hack-effect5 span:nth-of-type(5)::before, .hack-effect6 span:nth-of-type(2)::before {
-    box-sizing: border-box;
-    position: absolute;
-    content: "";
-    background: inherit;
-    animation: chitchat15 infinite linear 2.6s;
+  75% {
+      transform: rotate(-45deg) rotateX(180deg) rotateY(180deg);
   }
-  
-  @keyframes spinner-y0fdc1 {
-    0% {
-     transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
-    }
-    12.5% {
-     transform: rotate(0deg)rotateX(0deg) rotateY(0deg);
-    }
-    25% {
-      transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
-    }
-    37.5% {
-      transform: rotate(0deg)rotateX(0) rotateY(0);
-    }
-    50% {
-        transform: rotate(45deg)rotateX(-180deg) rotateY(-180deg);
-      }
-    62.5% {
-        transform: rotate(0) rotateX(0) rotateY(0);
-    }
-    75% {
-        transform: rotate(-45deg) rotateX(180deg) rotateY(180deg);
-    }
-    87.5% {
-        transform: rotate(0) rotateX(0) rotateY(0);
-    }
-    100% {
-        transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
-    }
+  87.5% {
+      transform: rotate(0) rotateX(0) rotateY(0);
   }
-  @keyframes chitchat11 {
-    0% {
-      content: "_xg}v)f|";
-    }
-  
-    5% {
-      content: "(v%%2@9";
-    }
-  
-    10% {
-      content: "lx}@$!#!";
-    }
-  
-    15% {
-      content: "#sz!@%@";
-    }
-  
-    20% {
-      content: "%/|)'|S";
-    }
-  
-    25% {
-      content: "x%k№7p.";
-    }
-  
-    30% {
-      content: "m\>v3s/b";
-    }
-  
-    35% {
-      content: "(8$}y}+@";
-    }
-  
-    40% {
-      content: "!|.a+$aL";
-    }
-  
-    45% {
-      content: "'_i]u2](";
-    }
-  
-    50% {
-      content: "82:?qsn'$^.&(!";
-    }
-  
-    55% {
-      content: "_#$2?2!!_ra'|13";
-    }
-  
-    60% {
-      content: "}nw@;+f>t:8^$!D";
-      right: 0;
-    }
-  
-    65% {
-      content: "d);8_6}@$^*";
-      right: 0;
-    }
-  
-    70% {
-      content: "}38d1fu@$";
-      right: 0;
-    }
-  
-    75% {
-      content: "'w<>7$";
-      right: 0;
-    }
-  
-    80% {
-      content: "cv:pakfy";
-      right: 0;
-    }
-  
-    85% {
-      content: ".:oy},5{!";
-      right: 0;
-    }
-  
-    90% {
-      content: "e1}yы$y%";
-      right: 0;
-    }
-  
-    95% {
-      content: "n)>.$>+t";
-      right: 0;
-    }
-  
-    100% {
-      content: "_)2)5tsv";
-      right: 0;
-    }
+  100% {
+      transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
   }
-  @keyframes chitchat12 {
-    0% {
-      content: "(38)\*zg";
-    }
-  
-    5% {
-      content: "(v%%2@9";
-    }
-  
-    10% {
-      content: "#1_*&@c7";
-    }
-  
-    15% {
-      content: "b<hf:3jo";
-    }
-  
-    20% {
-      content: "5\:+uqdb";
-    }
-  
-    25% {
-      content: "*q4>%tdy";
-    }
-  
-    30% {
-      content: "m\>v3s/b";
-    }
-  
-    35% {
-      content: "r<%*fr[n";
-    }
-  
-    40% {
-      content: "![o?&<.|<";
-    }
-  
-    45% {
-      content: "![&jz+p[";
-    }
-  
-    50% {
-      content: ".:oy},5{";
-    }
-  
-    55% {
-      content: "83g$g<yg";
-    }
-  
-    60% {
-      content: "[)!4,[b*";
-      right: 0;
-    }
-  
-    65% {
-      content: "u?%c{5_@";
-      right: 0;
-    }
-  
-    70% {
-      content: "}38d1fu@$";
-      right: 0;
-    }
-  
-    75% {
-      content: "%_{'%\1$";
-      right: 0;
-    }
-  
-    80% {
-      content: "/&vpSmo_";
-      right: 0;
-    }
-  
-    85% {
-      content: "|(1ijjvj";
-      right: 0;
-    }
-  
-    90% {
-      content: "e1}yы$y%";
-      right: 0;
-    }
-  
-    95% {
-      content: "n)>.$>+t";
-      right: 0;
-    }
-  
-    100% {
-      content: "|*y3lzce";
-      right: 0;
-    }
+}
+@keyframes chitchat11 {
+  0% {
+    content: "_xg}v)f|";
   }
-  @keyframes chitchat13 {
-    0% {
-      content: ";gx\\#@t";
-    }
-  
-    5% {
-      content: "(v%%2@9";
-    }
-  
-    10% {
-      content: "*@dv+qi1";
-    }
-  
-    15% {
-      content: "g:_nbf$b";
-    }
-  
-    20% {
-      content: "<9%'mS*<";
-    }
-  
-    25% {
-      content: "/*r\i!?x";
-    }
-  
-    30% {
-      content: "3i)r,;ls";
-    }
-  
-    35% {
-      content: "*:}f##]i";
-    }
-  
-    40% {
-      content: ",@;26%vy";
-    }
-  
-    45% {
-      content: "wo]r}e]m";
-    }
-  
-    50% {
-      content: ".:oy},5{";
-    }
-  
-    55% {
-      content: "|vp*ubzg";
-    }
-  
-    60% {
-      content: ",nA1ls{_*";
-      right: 0;
-    }
-  
-    65% {
-      content: "!jt,?7ro";
-      right: 0;
-    }
-  
-    70% {
-      content: "^ze<*;s6";
-      right: 0;
-    }
-  
-    75% {
-      content: "%_{'%\1$";
-      right: 0;
-    }
-  
-    80% {
-      content: "/&vpSmo_";
-      right: 0;
-    }
-  
-    85% {
-      content: "&,7#j*$$";
-      right: 0;
-    }
-  
-    90% {
-      content: "/j{x|[n!";
-      right: 0;
-    }
-  
-    95% {
-      content: "y,aoj:do";
-      right: 0;
-    }
-  
-    100% {
-      content: "e@>v'blt";
-      right: 0;
-    }
+
+  5% {
+    content: "(v%%2@9";
   }
-  @keyframes chitchat14 {
-    0% {
-      content: "u3\+#@)o";
-    }
-  
-    5% {
-      content: "6}0#7isf";
-    }
-  
-    10% {
-      content: "8+#*a__u";
-    }
-  
-    15% {
-      content: "x*\yj.b3";
-    }
-  
-    20% {
-      content: ":3v*|k#c";
-    }
-  
-    25% {
-      content: "ib%8p'v}";
-    }
-  
-    30% {
-      content: "7x.ni$r?";
-    }
-  
-    35% {
-      content: "*'{aH[:,";
-    }
-  
-    40% {
-      content: ":xef?_:j";
-    }
-  
-    45% {
-      content: "wo]r}e]m";
-    }
-  
-    50% {
-      content: ".:oy},5{";
-    }
-  
-    55% {
-      content: "?.61@7\e";
-    }
-  
-    60% {
-      content: ":ees8d(6";
-      right: 0;
-    }
-  
-    65% {
-      content: "'>q]%83u";
-      right: 0;
-    }
-  
-    70% {
-      content: "^ze<*;s6";
-      right: 0;
-    }
-  
-    75% {
-      content: "%_{'%\1$";
-      right: 0;
-    }
-  
-    80% {
-      content: "4./?*]1i";
-      right: 0;
-    }
-  
-    85% {
-      content: "y/yd.u:s";
-      right: 0;
-    }
-  
-    90% {
-      content: "/j{x|[n!";
-      right: 0;
-    }
-  
-    95% {
-      content: "j&(:d?_h";
-      right: 0;
-    }
-  
-    100% {
-      content: "w4g32k),";
-      right: 0;
-    }
+
+  10% {
+    content: "lx}@$!#!";
   }
-  @keyframes chitchat15 {
-    0% {
-      content: "i?@>c.st";
-    }
-  
-    5% {
-      content: "nd8^$c:)";
-    }
-  
-    10% {
-      content: "8+#*a__u";
-    }
-  
-    15% {
-      content: "x*\yj.b3";
-    }
-  
-    20% {
-      content: "dxupr[c_";
-    }
-  
-    25% {
-      content: "'p<7+v^^";
-    }
-  
-    30% {
-      content: "(9hj[?tr";
-    }
-  
-    35% {
-      content: "gg*'.1{2";
-    }
-  
-    40% {
-      content: ":xef?_:j";
-    }
-  
-    45% {
-      content: "xd1da;cy";
-    }
-  
-    50% {
-      content: "$*z&]b_<";
-    }
-  
-    55% {
-      content: "isawe(+s";
-    }
-  
-    60% {
-      content: "xaw?t6tn";
-      right: 0;
-    }
-  
-    65% {
-      content: "j,!<:@[y";
-      right: 0;
-    }
-  
-    70% {
-      content: "t6v+5qmk";
-      right: 0;
-    }
-  
-    75% {
-      content: "lz>?a0pg";
-      right: 0;
-    }
-  
-    80% {
-      content: "4./?*]1i";
-      right: 0;
-    }
-  
-    85% {
-      content: "[\0]hn^{";
-      right: 0;
-    }
-  
-    90% {
-      content: "r.m:!f/S";
-      right: 0;
-    }
-  
-    95% {
-      content: ",xux>h6*";
-      right: 0;
-    }
-  
-    100% {
-      content: ":6u@iii\S";
-      right: 0;
-    }
+
+  15% {
+    content: "#sz!@%@";
   }
+
+  20% {
+    content: "%/|)'|S";
+  }
+
+  25% {
+    content: "x%k№7p.";
+  }
+
+  30% {
+    content: "m\>v3s/b";
+  }
+
+  35% {
+    content: "(8$}y}+@";
+  }
+
+  40% {
+    content: "!|.a+$aL";
+  }
+
+  45% {
+    content: "'_i]u2](";
+  }
+
+  50% {
+    content: "82:?qsn'$^.&(!";
+  }
+
+  55% {
+    content: "_#$2?2!!_ra'|13";
+  }
+
+  60% {
+    content: "}nw@;+f>t:8^$!D";
+    right: 0;
+  }
+
+  65% {
+    content: "d);8_6}@$^*";
+    right: 0;
+  }
+
+  70% {
+    content: "}38d1fu@$";
+    right: 0;
+  }
+
+  75% {
+    content: "'w<>7$";
+    right: 0;
+  }
+
+  80% {
+    content: "cv:pakfy";
+    right: 0;
+  }
+
+  85% {
+    content: ".:oy},5{!";
+    right: 0;
+  }
+
+  90% {
+    content: "e1}yы$y%";
+    right: 0;
+  }
+
+  95% {
+    content: "n)>.$>+t";
+    right: 0;
+  }
+
+  100% {
+    content: "_)2)5tsv";
+    right: 0;
+  }
+}
+@keyframes chitchat12 {
+  0% {
+    content: "(38)\*zg";
+  }
+
+  5% {
+    content: "(v%%2@9";
+  }
+
+  10% {
+    content: "#1_*&@c7";
+  }
+
+  15% {
+    content: "b<hf:3jo";
+  }
+
+  20% {
+    content: "5\:+uqdb";
+  }
+
+  25% {
+    content: "*q4>%tdy";
+  }
+
+  30% {
+    content: "m\>v3s/b";
+  }
+
+  35% {
+    content: "r<%*fr[n";
+  }
+
+  40% {
+    content: "![o?&<.|<";
+  }
+
+  45% {
+    content: "![&jz+p[";
+  }
+
+  50% {
+    content: ".:oy},5{";
+  }
+
+  55% {
+    content: "83g$g<yg";
+  }
+
+  60% {
+    content: "[)!4,[b*";
+    right: 0;
+  }
+
+  65% {
+    content: "u?%c{5_@";
+    right: 0;
+  }
+
+  70% {
+    content: "}38d1fu@$";
+    right: 0;
+  }
+
+  75% {
+    content: "%_{'%\1$";
+    right: 0;
+  }
+
+  80% {
+    content: "/&vpSmo_";
+    right: 0;
+  }
+
+  85% {
+    content: "|(1ijjvj";
+    right: 0;
+  }
+
+  90% {
+    content: "e1}yы$y%";
+    right: 0;
+  }
+
+  95% {
+    content: "n)>.$>+t";
+    right: 0;
+  }
+
+  100% {
+    content: "|*y3lzce";
+    right: 0;
+  }
+}
+@keyframes chitchat13 {
+  0% {
+    content: ";gx\\#@t";
+  }
+
+  5% {
+    content: "(v%%2@9";
+  }
+
+  10% {
+    content: "*@dv+qi1";
+  }
+
+  15% {
+    content: "g:_nbf$b";
+  }
+
+  20% {
+    content: "<9%'mS*<";
+  }
+
+  25% {
+    content: "/*r\i!?x";
+  }
+
+  30% {
+    content: "3i)r,;ls";
+  }
+
+  35% {
+    content: "*:}f##]i";
+  }
+
+  40% {
+    content: ",@;26%vy";
+  }
+
+  45% {
+    content: "wo]r}e]m";
+  }
+
+  50% {
+    content: ".:oy},5{";
+  }
+
+  55% {
+    content: "|vp*ubzg";
+  }
+
+  60% {
+    content: ",nA1ls{_*";
+    right: 0;
+  }
+
+  65% {
+    content: "!jt,?7ro";
+    right: 0;
+  }
+
+  70% {
+    content: "^ze<*;s6";
+    right: 0;
+  }
+
+  75% {
+    content: "%_{'%\1$";
+    right: 0;
+  }
+
+  80% {
+    content: "/&vpSmo_";
+    right: 0;
+  }
+
+  85% {
+    content: "&,7#j*$$";
+    right: 0;
+  }
+
+  90% {
+    content: "/j{x|[n!";
+    right: 0;
+  }
+
+  95% {
+    content: "y,aoj:do";
+    right: 0;
+  }
+
+  100% {
+    content: "e@>v'blt";
+    right: 0;
+  }
+}
+@keyframes chitchat14 {
+  0% {
+    content: "u3\+#@)o";
+  }
+
+  5% {
+    content: "6}0#7isf";
+  }
+
+  10% {
+    content: "8+#*a__u";
+  }
+
+  15% {
+    content: "x*\yj.b3";
+  }
+
+  20% {
+    content: ":3v*|k#c";
+  }
+
+  25% {
+    content: "ib%8p'v}";
+  }
+
+  30% {
+    content: "7x.ni$r?";
+  }
+
+  35% {
+    content: "*'{aH[:,";
+  }
+
+  40% {
+    content: ":xef?_:j";
+  }
+
+  45% {
+    content: "wo]r}e]m";
+  }
+
+  50% {
+    content: ".:oy},5{";
+  }
+
+  55% {
+    content: "?.61@7\e";
+  }
+
+  60% {
+    content: ":ees8d(6";
+    right: 0;
+  }
+
+  65% {
+    content: "'>q]%83u";
+    right: 0;
+  }
+
+  70% {
+    content: "^ze<*;s6";
+    right: 0;
+  }
+
+  75% {
+    content: "%_{'%\1$";
+    right: 0;
+  }
+
+  80% {
+    content: "4./?*]1i";
+    right: 0;
+  }
+
+  85% {
+    content: "y/yd.u:s";
+    right: 0;
+  }
+
+  90% {
+    content: "/j{x|[n!";
+    right: 0;
+  }
+
+  95% {
+    content: "j&(:d?_h";
+    right: 0;
+  }
+
+  100% {
+    content: "w4g32k),";
+    right: 0;
+  }
+}
+@keyframes chitchat15 {
+  0% {
+    content: "i?@>c.st";
+  }
+
+  5% {
+    content: "nd8^$c:)";
+  }
+
+  10% {
+    content: "8+#*a__u";
+  }
+
+  15% {
+    content: "x*\yj.b3";
+  }
+
+  20% {
+    content: "dxupr[c_";
+  }
+
+  25% {
+    content: "'p<7+v^^";
+  }
+
+  30% {
+    content: "(9hj[?tr";
+  }
+
+  35% {
+    content: "gg*'.1{2";
+  }
+
+  40% {
+    content: ":xef?_:j";
+  }
+
+  45% {
+    content: "xd1da;cy";
+  }
+
+  50% {
+    content: "$*z&]b_<";
+  }
+
+  55% {
+    content: "isawe(+s";
+  }
+
+  60% {
+    content: "xaw?t6tn";
+    right: 0;
+  }
+
+  65% {
+    content: "j,!<:@[y";
+    right: 0;
+  }
+
+  70% {
+    content: "t6v+5qmk";
+    right: 0;
+  }
+
+  75% {
+    content: "lz>?a0pg";
+    right: 0;
+  }
+
+  80% {
+    content: "4./?*]1i";
+    right: 0;
+  }
+
+  85% {
+    content: "[\0]hn^{";
+    right: 0;
+  }
+
+  90% {
+    content: "r.m:!f/S";
+    right: 0;
+  }
+
+  95% {
+    content: ",xux>h6*";
+    right: 0;
+  }
+
+  100% {
+    content: ":6u@iii\S";
+    right: 0;
+  }
+}

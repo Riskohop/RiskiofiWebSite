@@ -145,7 +145,6 @@ function start() {
     }
 
     function redrawScene() {
-        resizeWindow();
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         findSiblings();
         var i, node, distance;
@@ -173,13 +172,7 @@ function start() {
     }
 
     function initHandlers() {
-        document.addEventListener('resize', resizeWindow, false);
         canvas.addEventListener('mousemove', mousemoveHandler, false);
-    }
-
-    function resizeWindow() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
     }
 
     function mousemoveHandler(e) {

@@ -1,39 +1,35 @@
 body {
     margin: 0;
     padding: 0;
-    background: #111111;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
     --color: rgba(37, 37, 37, 0.3);
-    background-color: #111111;
     background-image: linear-gradient(-45deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
         linear-gradient(45deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
     background-size: 55px 55px;
 }
-
-
 .btns {
-  margin: 3% 20% 0 20%;
+    margin: 3% 20% 0 20%;
 }
 .main {
-  margin: 10% 5% 0 5%;
-  max-width: 1500px;
-  flex: 1 1 auto;
-  z-index: 99;
+    margin: 10% 5% 0 5%;
+    max-width: 1500px;
+    flex: 1 1 auto;
+    z-index: 99;
 
 }
 .author {
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
     color: rgb(129, 129, 129);
     box-shadow: -10px 10px 5px rgb(13, 13, 13);
-    
-    background-color: #1b1b1b; 
+
+    background-color: #1b1b1b;
     border-radius: 0px;
     padding: 20px 0px 20px 0px;
     border: solid;
@@ -47,7 +43,7 @@ body {
     max-width: 1000px;
     display: flex;
     box-shadow: -10px 10px 5px rgb(15, 15, 15);
-    
+
     flex-direction: column;
     border: solid  rgb(70, 123, 65);
     border-radius: 0px;
@@ -60,8 +56,8 @@ body {
     padding: 0 0 0 7px;
 }
 .author-info-text {
-  flex: 1 1 max-content;
-  align-self: top;
+    flex: 1 1 max-content;
+
 }
 .nickname {
     font-family: 'Source Code Pro';
@@ -70,102 +66,99 @@ body {
     color:#B7EFC5;
 }
 .nickname span{
-  box-sizing: border-box;
-  position: relative;
-  
-  box-sizing: border-box;
-  padding:0;
-  display: flex;
-  align-items:left;
-  justify-content: left;
-  color:#B7EFC5;
-  background: #1b1b1b;
-  border: 0;
-  overflow: hidden;
-  box-shadow: 0;
-  font-family: 'Source Code Pro',monospace;
-  font-size: xx-large;
-  margin: 0;
+    box-sizing: border-box;
+    position: relative;
+
+    box-sizing: border-box;
+    padding:0;
+    display: flex;
+    justify-content: left;
+    color:#B7EFC5;
+    background: #1b1b1b;
+    border: 0;
+    overflow: hidden;
+    box-shadow: none;
+    font-family: 'Source Code Pro',monospace;
+    font-size: xx-large;
+    margin: 0;
 }
 .nickname span::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat21 ease 3.5s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat21 ease 3.5s;
 }
 .name {
     color: #6ed387;
-    
+
 }
 .name span {
-  box-sizing: border-box;
-  position: relative;
-  
-  box-sizing: border-box;
-  display: flex;
-  align-items:left;
-  justify-content: left;
-  color:#6ed387;
-  background: #1b1b1b;
-  border: 0;
-  overflow: hidden;
-  box-shadow: 0;
-  font-family: 'Source Code Pro',monospace;
-  font-size: x-large;
-  padding:0;
-  margin: 0;
+    box-sizing: border-box;
+    position: relative;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    color:#6ed387;
+    background: #1b1b1b;
+    border: 0;
+    overflow: hidden;
+    box-shadow: none;
+    font-family: 'Source Code Pro',monospace;
+    font-size: x-large;
+    padding:0;
+    margin: 0;
 }
 .name span::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat22 ease 2s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat22 ease 2s;
 }
 .description-date, .description-status, .description-projects {
-  margin: 5px 0 5px 0;
-  color: #498b5a;
-  font-size: large;
+    margin: 5px 0 5px 0;
+    color: #498b5a;
+    font-size: large;
 }
 .description-date span, .description-status span, .description-projects span{
-  box-sizing: border-box;
-  position: relative;
-  
-  box-sizing: border-box;
-  display: flex;
-  align-items:left;
-  justify-content: left;
-  color: #498b5a;
-  background: #1b1b1b;
-  border: 0;
-  overflow: hidden;
-  box-shadow: 0;
-  font-family: 'Source Code Pro',monospace;
-  font-size: large;
-  padding:0;
-  margin: 0;
+    box-sizing: border-box;
+    position: relative;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    color: #498b5a;
+    background: #1b1b1b;
+    border: 0;
+    overflow: hidden;
+    box-shadow: none;
+    font-family: 'Source Code Pro',monospace;
+    font-size: large;
+    padding:0;
+    margin: 0;
 }
 .description-date span::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat23 ease 5.2s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat23 ease 5.2s;
 }
 .description-status span::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat24 ease 3.5s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat24 ease 3.5s;
 }
 .description-projects span::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat25 ease 2s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat25 ease 2s;
 }
 .link-list {
     display: block;
@@ -180,18 +173,17 @@ body {
     padding: 0;
 }
 .links {
-    align-self: bottom;
     margin: 0 0 1% 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 .li {
-  display: flex;
-  
-  font-family: 'Source Code Pro';
-  font-size: large;
-  margin: 1px 0;
+    display: flex;
+
+    font-family: 'Source Code Pro';
+    font-size: large;
+    margin: 1px 0;
 }
 .telegram-image {
     vertical-align: bottom;
@@ -232,16 +224,16 @@ body {
 }
 .buttons-panel {
 
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
-    
+
     gap: 10px;
     justify-content: space-evenly;
     margin: 1% 0 0% 0;
     color: rgb(129, 129, 129);
     box-shadow: -10px 10px 5px rgb(13, 13, 13);
-    
-    background-color: #1b1b1b; 
+
+    background-color: #1b1b1b;
     border-radius: 0px;
     padding: 20px 15px 20px 15px;
     border: solid;
@@ -251,1641 +243,1637 @@ body {
     border-color: #272727;
 }
 .btn-panel {
-  flex: 1 1 max-content;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 0px;
-  font-size: 17px;
-  font-weight: 500;
-  text-shadow: none;
-  background: transparent;
-  box-shadow: transparent;
-  border: 1px solid rgb(104,207,128);
-  transition: 0.3s ease;
-  user-select: none;
-  
-  --btn-default-bg: #1b1b1b;
-  --btn-padding: 10px 20px;
-  --btn-hover-bg: #4AD66D;
-  --btn-transition: . 3s ;
-  --btn-letter-spacing: .01rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgb(0, 0, 0);
-  --hover-btn-color: #ffffff;
-  --default-btn-color: #4AD66D;
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 400;
-  --font-family: 'Source Code Pro',monospace;
-  /* 👆 this field should not be empty */
-  --border: 1px solid #4AD66D;
-  --justify-content: center;
+    flex: 1 1 max-content;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: none;
+    background: transparent;
+    border: 1px solid rgb(104,207,128);
+    transition: 0.3s ease;
+    user-select: none;
+
+    --btn-default-bg: #1b1b1b;
+    --btn-padding: 10px 20px;
+    --btn-hover-bg: #4AD66D;
+    --btn-transition: .3s ;
+    --btn-letter-spacing: .01rem;
+    --btn-animation-duration: 1.2s;
+    --btn-shadow-color: rgb(0, 0, 0);
+    --hover-btn-color: #ffffff;
+    --default-btn-color: #4AD66D;
+    --font-size: 16px;
+    /* 👆 this field should not be empty */
+    --font-weight: 400;
+    --font-family: 'Source Code Pro',monospace;
+    /* 👆 this field should not be empty */
+    --border: 1px solid #4AD66D;
+    --justify-content: center;
 }
 .link-btn {
-  margin: 1% 0 0 0;
-  flex: 1 1 max-content;
-  --btn-default-bg: #1b1b1b;
-  --btn-padding: 0px 0px;
-  --btn-hover-bg: #4AD66D;
-  --btn-transition: . 3s ;
-  --btn-letter-spacing: .01rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgba(0, 0, 0, 0);
-  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #ffffff;
-  --default-btn-color: #4AD66D;
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 400;
-  --font-family: 'Source Code Pro',monospace;
-  /* 👆 this field should not be empty */
-  --border: none;
+    margin: 1% 0 0 0;
+    flex: 1 1 max-content;
+    --btn-default-bg: #1b1b1b;
+    --btn-padding: 0px 0px;
+    --btn-hover-bg: #4AD66D;
+    --btn-transition: .3s;
+    --btn-letter-spacing: .01rem;
+    --btn-animation-duration: 1.2s;
+    --btn-shadow-color: rgba(0, 0, 0, 0);
+    --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+    --hover-btn-color: #ffffff;
+    --default-btn-color: #4AD66D;
+    --font-size: 16px;
+    /* 👆 this field should not be empty */
+    --font-weight: 400;
+    --font-family: 'Source Code Pro',monospace;
+    /* 👆 this field should not be empty */
+    --border: none;
 }
 /* button settings 👆 */
 
 .link-btn, .btn-panel{
-  box-sizing: border-box;
-  padding: var(--btn-padding);
-  display: flex;
-  align-items:center;
-  justify-content: var(--justify-content);
-  color: var(--default-btn-color);
-  font: var(--font-weight) var(--font-size) var(--font-family);
-  background:var(--btn-default-bg);
-  border: var(--border);
-  cursor: pointer;
-  transition: 0.3s;
-  overflow: hidden;
-  box-shadow: var(--btn-shadow);
-  
+    box-sizing: border-box;
+    padding: var(--btn-padding);
+    display: flex;
+    align-items:center;
+    justify-content: var(--justify-content);
+    color: var(--default-btn-color);
+    font: var(--font-weight) var(--font-size) var(--font-family);
+    background:var(--btn-default-bg);
+    border: var(--border);
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+
 }
 .link-btn span, .btn-panel span{
-  letter-spacing: var(--btn-letter-spacing);
-  transition: var(--btn-transition);
-  box-sizing: border-box;
-  position: relative;
-  background: inherit;
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    background: inherit;
 }
 .hack-effect span, .hack-effect2 span, .hack-effect3 span, .hack-effect4 span, .hack-effect5 span, .hack-effect6 span{
-  box-sizing: border-box;
-  position: relative;
-  
-  
-  box-sizing: border-box;
-  padding:0;
-  display: flex;
-  align-items:left;
-  justify-content: left;
-  color:#4AD66D;
-  font: 400 large 'Source Code Pro';
-  background: #27272700;
-  border: 0;
-  cursor: pointer;
-  transition: 0.2s;
-  overflow: hidden;
-  box-shadow: 0;
-  
+    box-sizing: border-box;
+    position: relative;
+
+
+    box-sizing: border-box;
+    padding:0;
+    display: flex;
+    justify-content: left;
+    color:#4AD66D;
+    font: 400 large 'Source Code Pro';
+    background: #27272700;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+    box-shadow: none;
+
 }
 .hack-effect span:nth-of-type(1)::before, .hack-effect2 span:nth-of-type(4)::before, .hack-effect3 span:nth-of-type(4)::before, .hack-effect4 span:nth-of-type(2)::before, .hack-effect5 span:nth-of-type(4)::before, .hack-effect6 span:nth-of-type(5)::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat11 infinite linear 2.4s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat11 infinite linear 2.4s;
 }
 .hack-effect span:nth-of-type(3)::before, .hack-effect2 span:nth-of-type(1)::before, .hack-effect3 span:nth-of-type(3)::before, .hack-effect4 span:nth-of-type(5)::before, .hack-effect5 span:nth-of-type(3)::before, .hack-effect6 span:nth-of-type(4)::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat12 infinite linear 2.0s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat12 infinite linear 2.0s;
 }
 .hack-effect span:nth-of-type(2)::before, .hack-effect2 span:nth-of-type(3)::before, .hack-effect3 span:nth-of-type(2)::before, .hack-effect4 span:nth-of-type(1)::before, .hack-effect5 span:nth-of-type(1)::before, .hack-effect6 span:nth-of-type(3)::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat13 infinite linear 3s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat13 infinite linear 3s;
 }
 .hack-effect span:nth-of-type(4)::before, .hack-effect2 span:nth-of-type(5)::before, .hack-effect3 span:nth-of-type(1)::before, .hack-effect4 span:nth-of-type(4)::before, .hack-effect5 span:nth-of-type(2)::before, .hack-effect6 span:nth-of-type(1)::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat14 infinite linear 1.6s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat14 infinite linear 1.6s;
 }
 .hack-effect span:nth-of-type(5)::before, .hack-effect2 span:nth-of-type(2)::before, .hack-effect3 span:nth-of-type(5)::before, .hack-effect4 span:nth-of-type(3)::before, .hack-effect5 span:nth-of-type(5)::before, .hack-effect6 span:nth-of-type(2)::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  animation: chitchat15 infinite linear 2.6s;
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+    animation: chitchat15 infinite linear 2.6s;
 }
 .link-btn span::before, .btn-panel span::before{
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-  
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+
 }
 .link-btn:hover, .link-btn:focus, .btn-panel:hover, .btn-panel:focus{
-  background: var(--btn-hover-bg);
+    background: var(--btn-hover-bg);
 }
 
 .link-btn:hover span, .link-btn:focus span, .btn-panel:hover, span .btn-panel:focus span{
-  color: var(--hover-btn-color); 
+    color: var(--hover-btn-color);
 }
 
 .gmail-btn:hover span::before, .gmail-btn:focus span::before{
-  animation: chitchat1 linear both var(--btn-animation-duration);
+    animation: chitchat1 linear both var(--btn-animation-duration);
 }
 .telegram-btn:hover span::before, .telegram-btn:focus span::before {
-  animation: chitchat2 linear both var(--btn-animation-duration);
+    animation: chitchat2 linear both var(--btn-animation-duration);
 }
 .discord-btn:hover span::before, .discord-btn:focus span::before, .btn-panel:hover span::before, .btn-panel:focus span::before{
-  animation: chitchat3 linear both var(--btn-animation-duration);
+    animation: chitchat3 linear both var(--btn-animation-duration);
 }
 .github-btn:hover span::before, .github-btn:focus span::before {
-  animation: chitchat4 linear both var(--btn-animation-duration);
+    animation: chitchat4 linear both var(--btn-animation-duration);
 }
 .steam-btn:hover span::before, .steam-btn:focus span::before {
-  animation: chitchat5 linear both var(--btn-animation-duration);
+    animation: chitchat5 linear both var(--btn-animation-duration);
 }
 .discord-server-btn:hover span::before, .discord-server-btn:focus span::before {
-  animation: chitchat6 linear both var(--btn-animation-duration);
+    animation: chitchat6 linear both var(--btn-animation-duration);
 }
 
 .author-img {
-  width: 195px;
-  height: 280px;
-  border-radius: 20px;
+    width: 195px;
+    height: 280px;
+    border-radius: 20px;
 }
 .card {
-  border: solid rgb(53, 53, 53);
-  width: 195px;
-  height: 280px;
-  margin: 0 0 0 11px;
-  flex: 0 0 content;
-  align-self: center;
-  background: rgba(55, 55, 55, 0.316);
-  border-radius: 0px;
-  border-top:0;
-  border-width: 5px;
-  box-shadow: -8px 8px 5px rgb(15, 15, 15);
+    border: solid rgb(53, 53, 53);
+    width: 195px;
+    height: 280px;
+    margin: 0 0 0 11px;
+    flex: 0 0 content;
+    align-self: center;
+    background: rgba(55, 55, 55, 0.316);
+    border-radius: 0px;
+    border-top:0;
+    border-width: 5px;
+    box-shadow: -8px 8px 5px rgb(15, 15, 15);
 
- }
- 
- button {
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #4AD66D;
-  text-shadow: none;
-  background: transparent;
-  box-shadow: transparent;
-  border: 1px solid #4AD66D;
-  transition: 0.1s ease;
-  user-select: none;
+}
+
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #4AD66D;
+    text-shadow: none;
+    background: transparent;
+    border: 1px solid #4AD66D;
+    transition: 0.1s ease;
+    user-select: none;
 }
 
 #btn:hover,:focus {
-  color: #ffffff;
-  background: #4AD66D;
-  border: 1px solid #4AD66D;
-  text-shadow: 0 0 5px #ffffff,
-              0 0 10px #ffffff,
-              0 0 20px #ffffff;
-  box-shadow: 0 0 5px #4AD66D,
-              0 0 20px #4AD66D,
-              0 0 50px #4AD66D,
-              0 0 100px #4AD66D;
+    color: #ffffff;
+    background: #4AD66D;
+    border: 1px solid #4AD66D;
+    text-shadow: 0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff;
+    box-shadow: 0 0 5px #4AD66D,
+    0 0 20px #4AD66D,
+    0 0 50px #4AD66D,
+    0 0 100px #4AD66D;
 }
 .preloader {
-  /*фиксированное позиционирование*/
-  position: fixed;
-  /* координаты положения */
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  /* фоновый цвет элемента */
-  background: #111111;
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-  z-index: 1001;
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #111111;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
 }
 .loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
+    transition: 0.3s opacity;
+    opacity: 0;
 }
 
 .loaded .preloader {
-  display: none;
+    display: none;
 }
 
 .spinner {
-  width: 110px;
-  height: 110px;
-  margin: 25% auto 25% auto;
-  animation: spinner-y0fdc1 16s infinite linear;
-  transform-style: preserve-3d;
- }
- .spinner-author {
-  width: 110px;
-  height: 110px;
-  animation: spinner-y0fdc1 40s infinite linear;
-  transform-style: preserve-3d;
- }
- .cube {
-  align-self: center;
-  margin: 10px 5% 10px 0;
-  flex: 0 1 120px;
- }
- .spinner > div, .spinner-author > div {
-  background-color: #2c723e33;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  color:#498b5a;
+    width: 110px;
+    height: 110px;
+    margin: 25% auto 25% auto;
+    animation: spinner-y0fdc1 16s infinite linear;
+    transform-style: preserve-3d;
+}
+.spinner-author {
+    width: 110px;
+    height: 110px;
+    animation: spinner-y0fdc1 40s infinite linear;
+    transform-style: preserve-3d;
+}
+.cube {
+    align-self: center;
+    margin: 10px 5% 10px 0;
+    flex: 0 1 120px;
+}
+.spinner > div, .spinner-author > div {
+    background-color: #2c723e33;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    color:#498b5a;
 
-  animation: chitchat6 1.2s infinite linear ;
-  border: 1px solid #4db868;
-  box-shadow: inset 0 0 1px #4AD66D,
-              0 0 5px #4AD66D,
-              0 0 5px #4AD66D,
-              inset 0 0 1px #4AD66D;
- }
+    animation: chitchat6 1.2s infinite linear ;
+    border: 1px solid #4db868;
+    box-shadow: inset 0 0 1px #4AD66D,
+    0 0 5px #4AD66D,
+    0 0 5px #4AD66D,
+    inset 0 0 1px #4AD66D;
+}
 
- .spinner div:nth-of-type(1) {
-  transform: translateZ(-55px) rotateY(180deg);
- }
- .spinner-author div:nth-of-type(1)  {
-  transform: translateZ(-55px) rotateY(180deg);
+.spinner div:nth-of-type(1) {
+    transform: translateZ(-55px) rotateY(180deg);
+}
+.spinner-author div:nth-of-type(1)  {
+    transform: translateZ(-55px) rotateY(180deg);
 
- }
- .spinner div:nth-of-type(2), .spinner-author div:nth-of-type(2) {
-  transform: rotateY(-270deg) translateX(50%);
-  transform-origin: top right;
- }
- 
- .spinner div:nth-of-type(3), .spinner-author div:nth-of-type(3) {
-  transform: rotateY(270deg) translateX(-50%);
-  transform-origin: center left;
- }
- 
- .spinner div:nth-of-type(4), .spinner-author div:nth-of-type(4) {
-  transform: rotateX(90deg) translateY(-50%);
-  transform-origin: top center;
- }
- 
- .spinner div:nth-of-type(5), .spinner-author div:nth-of-type(5) {
-  transform: rotateX(-90deg) translateY(50%);
-  transform-origin: bottom center;
- }
- 
- .spinner div:nth-of-type(6) {
-  transform: translateZ(55px);
- }
- .spinner-author div:nth-of-type(6) {
-  transform: translateZ(55px);
+}
+.spinner div:nth-of-type(2), .spinner-author div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+}
 
- }
-  
- @keyframes spinner-y0fdc1 {
-  0% {
-   transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
-  }
-  12.5% {
-   transform: rotate(0deg)rotateX(0deg) rotateY(0deg);
-  }
-  25% {
-    transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
-  }
-  37.5% {
-    transform: rotate(0deg)rotateX(0) rotateY(0);
-  }
-  50% {
-      transform: rotate(45deg)rotateX(-180deg) rotateY(-180deg);
+.spinner div:nth-of-type(3), .spinner-author div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4), .spinner-author div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5), .spinner-author div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+    transform: translateZ(55px);
+}
+.spinner-author div:nth-of-type(6) {
+    transform: translateZ(55px);
+
+}
+
+@keyframes spinner-y0fdc1 {
+    0% {
+        transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
     }
-  62.5% {
-      transform: rotate(0) rotateX(0) rotateY(0);
-  }
-  75% {
-      transform: rotate(-45deg) rotateX(180deg) rotateY(180deg);
-  }
-  87.5% {
-      transform: rotate(0) rotateX(0) rotateY(0);
-  }
-  100% {
-      transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
-  }
+    12.5% {
+        transform: rotate(0deg)rotateX(0deg) rotateY(0deg);
+    }
+    25% {
+        transform: rotate(-45deg)rotateX(180deg) rotateY(180deg);
+    }
+    37.5% {
+        transform: rotate(0deg)rotateX(0) rotateY(0);
+    }
+    50% {
+        transform: rotate(45deg)rotateX(-180deg) rotateY(-180deg);
+    }
+    62.5% {
+        transform: rotate(0) rotateX(0) rotateY(0);
+    }
+    75% {
+        transform: rotate(-45deg) rotateX(180deg) rotateY(180deg);
+    }
+    87.5% {
+        transform: rotate(0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: rotate(45deg) rotateX(-180deg) rotateY(-180deg);
+    }
 }
 @keyframes chitchat1 {
-  0% {
-    content: "#";
-  }
+    0% {
+        content: "#";
+    }
 
-  5% {
-    content: ".";
-  }
+    5% {
+        content: ".";
+    }
 
-  10% {
-    content: "^{";
-  }
+    10% {
+        content: "^{";
+    }
 
-  15% {
-    content: "-!";
-  }
+    15% {
+        content: "-!";
+    }
 
-  20% {
-    content: "#$_";
-  }
+    20% {
+        content: "#$_";
+    }
 
-  25% {
-    content: "№:0";
-  }
+    25% {
+        content: "№:0";
+    }
 
-  30% {
-    content: "#{+.";
-  }
+    30% {
+        content: "#{+.";
+    }
 
-  35% {
-    content: "@}-?";
-  }
+    35% {
+        content: "@}-?";
+    }
 
-  40% {
-    content: "?{4@%";
-  }
+    40% {
+        content: "?{4@%";
+    }
 
-  45% {
-    content: "=.,^!";
-  }
+    45% {
+        content: "=.,^!";
+    }
 
-  50% {
-    content: "?2@%";
-  }
+    50% {
+        content: "?2@%";
+    }
 
-  55% {
-    content: "\;1}]";
-  }
+    55% {
+        content: "\;1}]";
+    }
 
-  60% {
-    content: "?{%:%";
-    right: 0;
-  }
+    60% {
+        content: "?{%:%";
+        right: 0;
+    }
 
-  65% {
-    content: "|{f[4";
-    right: 0;
-  }
+    65% {
+        content: "|{f[4";
+        right: 0;
+    }
 
-  70% {
-    content: "{4%0%";
-    right: 0;
-  }
+    70% {
+        content: "{4%0%";
+        right: 0;
+    }
 
-  75% {
-    content: "'1_0<";
-    right: 0;
-  }
+    75% {
+        content: "'1_0<";
+        right: 0;
+    }
 
-  80% {
-    content: "{0%";
-    right: 0;
-  }
+    80% {
+        content: "{0%";
+        right: 0;
+    }
 
-  85% {
-    content: "]>'";
-    right: 0;
-  }
+    85% {
+        content: "]>'";
+        right: 0;
+    }
 
-  90% {
-    content: "4";
-    right: 0;
-  }
+    90% {
+        content: "4";
+        right: 0;
+    }
 
-  95% {
-    content: "2";
-    right: 0;
-  }
+    95% {
+        content: "2";
+        right: 0;
+    }
 
-  100% {
-    content: "";
-    right: 0;
-  }
+    100% {
+        content: "";
+        right: 0;
+    }
 }
 @keyframes chitchat2 {
-  0% {
-    content: "&";
-  }
+    0% {
+        content: "&";
+    }
 
-  5% {
-    content: "<";
-  }
+    5% {
+        content: "<";
+    }
 
-  10% {
-    content: "?4";
-  }
+    10% {
+        content: "?4";
+    }
 
-  15% {
-    content: "+(";
-  }
+    15% {
+        content: "+(";
+    }
 
-  20% {
-    content: "%)@";
-  }
+    20% {
+        content: "%)@";
+    }
 
-  25% {
-    content: "5^?";
-  }
+    25% {
+        content: "5^?";
+    }
 
-  30% {
-    content: "|;=/";
-  }
+    30% {
+        content: "|;=/";
+    }
 
-  35% {
-    content: "_f<}";
-  }
+    35% {
+        content: "_f<}";
+    }
 
-  40% {
-    content: "&',vd"
-  }
+    40% {
+        content: "&',vd"
+    }
 
-  45% {
-    content: "otw}%";
-  }
+    45% {
+        content: "otw}%";
+    }
 
-  50% {
-    content: "]w(9*";
-  }
+    50% {
+        content: "]w(9*";
+    }
 
-  55% {
-    content: "_#8?$";
-  }
+    55% {
+        content: "_#8?$";
+    }
 
-  60% {
-    content: "<{?8(";
-    right: 0;
-  }
+    60% {
+        content: "<{?8(";
+        right: 0;
+    }
 
-  65% {
-    content: "ulx|n";
-    right: 0;
-  }
+    65% {
+        content: "ulx|n";
+        right: 0;
+    }
 
-  70% {
-    content: "p%{;*";
-    right: 0;
-  }
+    70% {
+        content: "p%{;*";
+        right: 0;
+    }
 
-  75% {
-    content: "_?'b3";
-    right: 0;
-  }
+    75% {
+        content: "_?'b3";
+        right: 0;
+    }
 
-  80% {
-    content: "np.";
-    right: 0;
-  }
+    80% {
+        content: "np.";
+        right: 0;
+    }
 
-  85% {
-    content: "_ob";
-    right: 0;
-  }
+    85% {
+        content: "_ob";
+        right: 0;
+    }
 
-  90% {
-    content: "8";
-    right: 0;
-  }
+    90% {
+        content: "8";
+        right: 0;
+    }
 
-  95% {
-    content: "1";
-    right: 0;
-  }
+    95% {
+        content: "1";
+        right: 0;
+    }
 
-  100% {
-    content: "";
-    right: 0;
-  }
+    100% {
+        content: "";
+        right: 0;
+    }
 }
 @keyframes chitchat3 {
-  0% {
-    content: "$";
-  }
+    0% {
+        content: "$";
+    }
 
-  5% {
-    content: "`";
-  }
+    5% {
+        content: "`";
+    }
 
-  10% {
-    content: "'[";
-  }
+    10% {
+        content: "'[";
+    }
 
-  15% {
-    content: "5o";
-  }
+    15% {
+        content: "5o";
+    }
 
-  20% {
-    content: "c@b";
-  }
+    20% {
+        content: "c@b";
+    }
 
-  25% {
-    content: "*@^";
-  }
+    25% {
+        content: "*@^";
+    }
 
-  30% {
-    content: "8b*?";
-  }
+    30% {
+        content: "8b*?";
+    }
 
-  35% {
-    content: "'\^i";
-  }
+    35% {
+        content: "'\^i";
+    }
 
-  40% {
-    content: "l/]#";
-  }
+    40% {
+        content: "l/]#";
+    }
 
-  45% {
-    content: "&',vd";
-  }
+    45% {
+        content: "&',vd";
+    }
 
-  50% {
-    content: "p%{;*";
-  }
+    50% {
+        content: "p%{;*";
+    }
 
-  55% {
-    content: "\;1}]";
-  }
+    55% {
+        content: "\;1}]";
+    }
 
-  60% {
-    content: "@@bt";
-    right: 0;
-  }
+    60% {
+        content: "@@bt";
+        right: 0;
+    }
 
-  65% {
-    content: "|{f[4";
-    right: 0;
-  }
+    65% {
+        content: "|{f[4";
+        right: 0;
+    }
 
-  70% {
-    content: "7s^%}";
-    right: 0;
-  }
+    70% {
+        content: "7s^%}";
+        right: 0;
+    }
 
-  75% {
-    content: "'1_0<";
-    right: 0;
-  }
+    75% {
+        content: "'1_0<";
+        right: 0;
+    }
 
-  80% {
-    content: "]]w";
-    right: 0;
-  }
+    80% {
+        content: "]]w";
+        right: 0;
+    }
 
-  85% {
-    content: "]>'";
-    right: 0;
-  }
+    85% {
+        content: "]>'";
+        right: 0;
+    }
 
-  90% {
-    content: "4";
-    right: 0;
-  }
+    90% {
+        content: "4";
+        right: 0;
+    }
 
-  95% {
-    content: "2";
-    right: 0;
-  }
+    95% {
+        content: "2";
+        right: 0;
+    }
 
-  100% {
-    content: "";
-    right: 0;
-  }
+    100% {
+        content: "";
+        right: 0;
+    }
 }
 @keyframes chitchat4 {
-  0% {
-    content: "&";
-  }
+    0% {
+        content: "&";
+    }
 
-  5% {
-    content: "<";
-  }
+    5% {
+        content: "<";
+    }
 
-  10% {
-    content: "?4";
-  }
+    10% {
+        content: "?4";
+    }
 
-  15% {
-    content: "+(";
-  }
+    15% {
+        content: "+(";
+    }
 
-  20% {
-    content: "%)@";
-  }
+    20% {
+        content: "%)@";
+    }
 
-  25% {
-    content: "5^?";
-  }
+    25% {
+        content: "5^?";
+    }
 
-  30% {
-    content: "|;=/";
-  }
+    30% {
+        content: "|;=/";
+    }
 
-  35% {
-    content: "_f<}";
-  }
+    35% {
+        content: "_f<}";
+    }
 
-  40% {
-    content: "&',vd"
-  }
+    40% {
+        content: "&',vd"
+    }
 
-  45% {
-    content: "otw}%";
-  }
+    45% {
+        content: "otw}%";
+    }
 
-  50% {
-    content: "]w(9*";
-  }
+    50% {
+        content: "]w(9*";
+    }
 
-  55% {
-    content: "_#8?$";
-  }
+    55% {
+        content: "_#8?$";
+    }
 
-  60% {
-    content: "<{?8(";
-    right: 0;
-  }
+    60% {
+        content: "<{?8(";
+        right: 0;
+    }
 
-  65% {
-    content: "ulx|n";
-    right: 0;
-  }
+    65% {
+        content: "ulx|n";
+        right: 0;
+    }
 
-  70% {
-    content: "p%{;*";
-    right: 0;
-  }
+    70% {
+        content: "p%{;*";
+        right: 0;
+    }
 
-  75% {
-    content: "_?'b3";
-    right: 0;
-  }
+    75% {
+        content: "_?'b3";
+        right: 0;
+    }
 
-  80% {
-    content: "np.";
-    right: 0;
-  }
+    80% {
+        content: "np.";
+        right: 0;
+    }
 
-  85% {
-    content: "_ob";
-    right: 0;
-  }
+    85% {
+        content: "_ob";
+        right: 0;
+    }
 
-  90% {
-    content: "8";
-    right: 0;
-  }
+    90% {
+        content: "8";
+        right: 0;
+    }
 
-  95% {
-    content: "1";
-    right: 0;
-  }
+    95% {
+        content: "1";
+        right: 0;
+    }
 
-  100% {
-    content: "";
-    right: 0;
-  }
+    100% {
+        content: "";
+        right: 0;
+    }
 }
 @keyframes chitchat5 {
-  0% {
-    content: "*";
-  }
+    0% {
+        content: "*";
+    }
 
-  5% {
-    content: "!";
-  }
+    5% {
+        content: "!";
+    }
 
-  10% {
-    content: "4t";
-  }
+    10% {
+        content: "4t";
+    }
 
-  15% {
-    content: "l^";
-  }
+    15% {
+        content: "l^";
+    }
 
-  20% {
-    content: "b6*";
-  }
+    20% {
+        content: "b6*";
+    }
 
-  25% {
-    content: "@e}";
-  }
+    25% {
+        content: "@e}";
+    }
 
-  30% {
-    content: "w'v[";
-  }
+    30% {
+        content: "w'v[";
+    }
 
-  35% {
-    content: "@}-?";
-  }
+    35% {
+        content: "@}-?";
+    }
 
-  40% {
-    content: "?{4@%";
-  }
+    40% {
+        content: "?{4@%";
+    }
 
-  45% {
-    content: "@*fo";
-  }
+    45% {
+        content: "@*fo";
+    }
 
-  50% {
-    content: "|8c%";
-  }
+    50% {
+        content: "|8c%";
+    }
 
-  55% {
-    content: "\;1}]";
-  }
+    55% {
+        content: "\;1}]";
+    }
 
-  60% {
-    content: "?{%:%";
-    right: 0;
-  }
+    60% {
+        content: "?{%:%";
+        right: 0;
+    }
 
-  65% {
-    content: "|{f[4";
-    right: 0;
-  }
+    65% {
+        content: "|{f[4";
+        right: 0;
+    }
 
-  70% {
-    content: "<_zl";
-    right: 0;
-  }
+    70% {
+        content: "<_zl";
+        right: 0;
+    }
 
-  75% {
-    content: "b>_@";
-    right: 0;
-  }
+    75% {
+        content: "b>_@";
+        right: 0;
+    }
 
-  80% {
-    content: "{0%";
-    right: 0;
-  }
+    80% {
+        content: "{0%";
+        right: 0;
+    }
 
-  85% {
-    content: "f|%";
-    right: 0;
-  }
+    85% {
+        content: "f|%";
+        right: 0;
+    }
 
-  90% {
-    content: ";";
-    right: 0;
-  }
+    90% {
+        content: ";";
+        right: 0;
+    }
 
-  95% {
-    content: ",";
-    right: 0;
-  }
+    95% {
+        content: ",";
+        right: 0;
+    }
 
-  100% {
-    content: "";
-    right: 0;
-  }
+    100% {
+        content: "";
+        right: 0;
+    }
 }
 @keyframes chitchat6 {
-  0% {
-    content: "#";
-  }
+    0% {
+        content: "#";
+    }
 
-  5% {
-    content: "(v%%2@";
-  }
+    5% {
+        content: "(v%%2@";
+    }
 
-  10% {
-    content: "lx}@$!#!";
-  }
+    10% {
+        content: "lx}@$!#!";
+    }
 
-  15% {
-    content: "#sz!@%@";
-  }
+    15% {
+        content: "#sz!@%@";
+    }
 
-  20% {
-    content: "%/|)'|S";
-  }
+    20% {
+        content: "%/|)'|S";
+    }
 
-  25% {
-    content: "%x?*";
-  }
+    25% {
+        content: "%x?*";
+    }
 
-  30% {
-    content: "/r*x#";
-  }
+    30% {
+        content: "/r*x#";
+    }
 
-  35% {
-    content: "(8$}y}+@";
-  }
+    35% {
+        content: "(8$}y}+@";
+    }
 
-  40% {
-    content: "!|.a+$aL";
-  }
+    40% {
+        content: "!|.a+$aL";
+    }
 
-  45% {
-    content: "'_i]u2](";
-  }
+    45% {
+        content: "'_i]u2](";
+    }
 
-  50% {
-    content: "82:?qsn'$^.&(!";
-  }
+    50% {
+        content: "82:?qsn'$^.&(!";
+    }
 
-  55% {
-    content: "_#$2?2!!_ra'|13";
-  }
+    55% {
+        content: "_#$2?2!!_ra'|13";
+    }
 
-  60% {
-    content: "}nw@;+f>t:8^$!D";
-    right: 0;
-  }
+    60% {
+        content: "}nw@;+f>t:8^$!D";
+        right: 0;
+    }
 
-  65% {
-    content: "d);8_6}@$^*";
-    right: 0;
-  }
+    65% {
+        content: "d);8_6}@$^*";
+        right: 0;
+    }
 
-  70% {
-    content: "}38d1fu@$";
-    right: 0;
-  }
+    70% {
+        content: "}38d1fu@$";
+        right: 0;
+    }
 
-  75% {
-    content: "'w<>7$";
-    right: 0;
-  }
+    75% {
+        content: "'w<>7$";
+        right: 0;
+    }
 
-  80% {
-    content: "(^3#";
-    right: 0;
-  }
+    80% {
+        content: "(^3#";
+        right: 0;
+    }
 
-  85% {
-    content: ";$<!";
-    right: 0;
-  }
+    85% {
+        content: ";$<!";
+        right: 0;
+    }
 
-  90% {
-    content: "9s";
-    right: 0;
-  }
+    90% {
+        content: "9s";
+        right: 0;
+    }
 
-  95% {
-    content: "k%";
-    right: 0;
-  }
+    95% {
+        content: "k%";
+        right: 0;
+    }
 
-  100% {
-    content: "";
-    right: 0;
-  }
+    100% {
+        content: "";
+        right: 0;
+    }
 }
 
 @keyframes chitchat11 {
-  0% {
-    content: "_xg}v)f|";
-  }
+    0% {
+        content: "_xg}v)f|";
+    }
 
-  5% {
-    content: "(v%%2@9";
-  }
+    5% {
+        content: "(v%%2@9";
+    }
 
-  10% {
-    content: "lx}@$!#!";
-  }
+    10% {
+        content: "lx}@$!#!";
+    }
 
-  15% {
-    content: "#sz!@%@";
-  }
+    15% {
+        content: "#sz!@%@";
+    }
 
-  20% {
-    content: "%/|)'|S";
-  }
+    20% {
+        content: "%/|)'|S";
+    }
 
-  25% {
-    content: "x%k№7p.";
-  }
+    25% {
+        content: "x%k№7p.";
+    }
 
-  30% {
-    content: "m\>v3s/b";
-  }
+    30% {
+        content: "m\>v3s/b";
+    }
 
-  35% {
-    content: "(8$}y}+@";
-  }
+    35% {
+        content: "(8$}y}+@";
+    }
 
-  40% {
-    content: "!|.a+$aL";
-  }
+    40% {
+        content: "!|.a+$aL";
+    }
 
-  45% {
-    content: "'_i]u2](";
-  }
+    45% {
+        content: "'_i]u2](";
+    }
 
-  50% {
-    content: "82:?qsn'$^.&(!";
-  }
+    50% {
+        content: "82:?qsn'$^.&(!";
+    }
 
-  55% {
-    content: "_#$2?2!!_ra'|13";
-  }
+    55% {
+        content: "_#$2?2!!_ra'|13";
+    }
 
-  60% {
-    content: "}nw@;+f>t:8^$!D";
-    right: 0;
-  }
+    60% {
+        content: "}nw@;+f>t:8^$!D";
+        right: 0;
+    }
 
-  65% {
-    content: "d);8_6}@$^*";
-    right: 0;
-  }
+    65% {
+        content: "d);8_6}@$^*";
+        right: 0;
+    }
 
-  70% {
-    content: "}38d1fu@$";
-    right: 0;
-  }
+    70% {
+        content: "}38d1fu@$";
+        right: 0;
+    }
 
-  75% {
-    content: "'w<>7$";
-    right: 0;
-  }
+    75% {
+        content: "'w<>7$";
+        right: 0;
+    }
 
-  80% {
-    content: "cv:pakfy";
-    right: 0;
-  }
+    80% {
+        content: "cv:pakfy";
+        right: 0;
+    }
 
-  85% {
-    content: ".:oy},5{!";
-    right: 0;
-  }
+    85% {
+        content: ".:oy},5{!";
+        right: 0;
+    }
 
-  90% {
-    content: "e1}yы$y%";
-    right: 0;
-  }
+    90% {
+        content: "e1}yы$y%";
+        right: 0;
+    }
 
-  95% {
-    content: "n)>.$>+t";
-    right: 0;
-  }
+    95% {
+        content: "n)>.$>+t";
+        right: 0;
+    }
 
-  100% {
-    content: "_)2)5tsv";
-    right: 0;
-  }
+    100% {
+        content: "_)2)5tsv";
+        right: 0;
+    }
 }
 @keyframes chitchat12 {
-  0% {
-    content: "(38)\*zg";
-  }
+    0% {
+        content: "(38)\*zg";
+    }
 
-  5% {
-    content: "(v%%2@9";
-  }
+    5% {
+        content: "(v%%2@9";
+    }
 
-  10% {
-    content: "#1_*&@c7";
-  }
+    10% {
+        content: "#1_*&@c7";
+    }
 
-  15% {
-    content: "b<hf:3jo";
-  }
+    15% {
+        content: "b<hf:3jo";
+    }
 
-  20% {
-    content: "5\:+uqdb";
-  }
+    20% {
+        content: "5\:+uqdb";
+    }
 
-  25% {
-    content: "*q4>%tdy";
-  }
+    25% {
+        content: "*q4>%tdy";
+    }
 
-  30% {
-    content: "m\>v3s/b";
-  }
+    30% {
+        content: "m\>v3s/b";
+    }
 
-  35% {
-    content: "r<%*fr[n";
-  }
+    35% {
+        content: "r<%*fr[n";
+    }
 
-  40% {
-    content: "![o?&<.|<";
-  }
+    40% {
+        content: "![o?&<.|<";
+    }
 
-  45% {
-    content: "![&jz+p[";
-  }
+    45% {
+        content: "![&jz+p[";
+    }
 
-  50% {
-    content: ".:oy},5{";
-  }
+    50% {
+        content: ".:oy},5{";
+    }
 
-  55% {
-    content: "83g$g<yg";
-  }
+    55% {
+        content: "83g$g<yg";
+    }
 
-  60% {
-    content: "[)!4,[b*";
-    right: 0;
-  }
+    60% {
+        content: "[)!4,[b*";
+        right: 0;
+    }
 
-  65% {
-    content: "u?%c{5_@";
-    right: 0;
-  }
+    65% {
+        content: "u?%c{5_@";
+        right: 0;
+    }
 
-  70% {
-    content: "}38d1fu@$";
-    right: 0;
-  }
+    70% {
+        content: "}38d1fu@$";
+        right: 0;
+    }
 
-  75% {
-    content: "%_{'%\1$";
-    right: 0;
-  }
+    75% {
+        content: "%_{'%\1$";
+        right: 0;
+    }
 
-  80% {
-    content: "/&vpSmo_";
-    right: 0;
-  }
+    80% {
+        content: "/&vpSmo_";
+        right: 0;
+    }
 
-  85% {
-    content: "|(1ijjvj";
-    right: 0;
-  }
+    85% {
+        content: "|(1ijjvj";
+        right: 0;
+    }
 
-  90% {
-    content: "e1}yы$y%";
-    right: 0;
-  }
+    90% {
+        content: "e1}yы$y%";
+        right: 0;
+    }
 
-  95% {
-    content: "n)>.$>+t";
-    right: 0;
-  }
+    95% {
+        content: "n)>.$>+t";
+        right: 0;
+    }
 
-  100% {
-    content: "|*y3lzce";
-    right: 0;
-  }
+    100% {
+        content: "|*y3lzce";
+        right: 0;
+    }
 }
 @keyframes chitchat13 {
-  0% {
-    content: ";gx\\#@t";
-  }
+    0% {
+        content: ";gx\\#@t";
+    }
 
-  5% {
-    content: "(v%%2@9";
-  }
+    5% {
+        content: "(v%%2@9";
+    }
 
-  10% {
-    content: "*@dv+qi1";
-  }
+    10% {
+        content: "*@dv+qi1";
+    }
 
-  15% {
-    content: "g:_nbf$b";
-  }
+    15% {
+        content: "g:_nbf$b";
+    }
 
-  20% {
-    content: "<9%'mS*<";
-  }
+    20% {
+        content: "<9%'mS*<";
+    }
 
-  25% {
-    content: "/*r\i!?x";
-  }
+    25% {
+        content: "/*r\i!?x";
+    }
 
-  30% {
-    content: "3i)r,;ls";
-  }
+    30% {
+        content: "3i)r,;ls";
+    }
 
-  35% {
-    content: "*:}f##]i";
-  }
+    35% {
+        content: "*:}f##]i";
+    }
 
-  40% {
-    content: ",@;26%vy";
-  }
+    40% {
+        content: ",@;26%vy";
+    }
 
-  45% {
-    content: "wo]r}e]m";
-  }
+    45% {
+        content: "wo]r}e]m";
+    }
 
-  50% {
-    content: ".:oy},5{";
-  }
+    50% {
+        content: ".:oy},5{";
+    }
 
-  55% {
-    content: "|vp*ubzg";
-  }
+    55% {
+        content: "|vp*ubzg";
+    }
 
-  60% {
-    content: ",nA1ls{_*";
-    right: 0;
-  }
+    60% {
+        content: ",nA1ls{_*";
+        right: 0;
+    }
 
-  65% {
-    content: "!jt,?7ro";
-    right: 0;
-  }
+    65% {
+        content: "!jt,?7ro";
+        right: 0;
+    }
 
-  70% {
-    content: "^ze<*;s6";
-    right: 0;
-  }
+    70% {
+        content: "^ze<*;s6";
+        right: 0;
+    }
 
-  75% {
-    content: "%_{'%\1$";
-    right: 0;
-  }
+    75% {
+        content: "%_{'%\1$";
+        right: 0;
+    }
 
-  80% {
-    content: "/&vpSmo_";
-    right: 0;
-  }
+    80% {
+        content: "/&vpSmo_";
+        right: 0;
+    }
 
-  85% {
-    content: "&,7#j*$$";
-    right: 0;
-  }
+    85% {
+        content: "&,7#j*$$";
+        right: 0;
+    }
 
-  90% {
-    content: "/j{x|[n!";
-    right: 0;
-  }
+    90% {
+        content: "/j{x|[n!";
+        right: 0;
+    }
 
-  95% {
-    content: "y,aoj:do";
-    right: 0;
-  }
+    95% {
+        content: "y,aoj:do";
+        right: 0;
+    }
 
-  100% {
-    content: "e@>v'blt";
-    right: 0;
-  }
+    100% {
+        content: "e@>v'blt";
+        right: 0;
+    }
 }
 @keyframes chitchat14 {
-  0% {
-    content: "u3\+#@)o";
-  }
+    0% {
+        content: "u3\+#@)o";
+    }
 
-  5% {
-    content: "6}0#7isf";
-  }
+    5% {
+        content: "6}0#7isf";
+    }
 
-  10% {
-    content: "8+#*a__u";
-  }
+    10% {
+        content: "8+#*a__u";
+    }
 
-  15% {
-    content: "x*\yj.b3";
-  }
+    15% {
+        content: "x*\yj.b3";
+    }
 
-  20% {
-    content: ":3v*|k#c";
-  }
+    20% {
+        content: ":3v*|k#c";
+    }
 
-  25% {
-    content: "ib%8p'v}";
-  }
+    25% {
+        content: "ib%8p'v}";
+    }
 
-  30% {
-    content: "7x.ni$r?";
-  }
+    30% {
+        content: "7x.ni$r?";
+    }
 
-  35% {
-    content: "*'{aH[:,";
-  }
+    35% {
+        content: "*'{aH[:,";
+    }
 
-  40% {
-    content: ":xef?_:j";
-  }
+    40% {
+        content: ":xef?_:j";
+    }
 
-  45% {
-    content: "wo]r}e]m";
-  }
+    45% {
+        content: "wo]r}e]m";
+    }
 
-  50% {
-    content: ".:oy},5{";
-  }
+    50% {
+        content: ".:oy},5{";
+    }
 
-  55% {
-    content: "?.61@7\e";
-  }
+    55% {
+        content: "?.61@7\e";
+    }
 
-  60% {
-    content: ":ees8d(6";
-    right: 0;
-  }
+    60% {
+        content: ":ees8d(6";
+        right: 0;
+    }
 
-  65% {
-    content: "'>q]%83u";
-    right: 0;
-  }
+    65% {
+        content: "'>q]%83u";
+        right: 0;
+    }
 
-  70% {
-    content: "^ze<*;s6";
-    right: 0;
-  }
+    70% {
+        content: "^ze<*;s6";
+        right: 0;
+    }
 
-  75% {
-    content: "%_{'%\1$";
-    right: 0;
-  }
+    75% {
+        content: "%_{'%\1$";
+        right: 0;
+    }
 
-  80% {
-    content: "4./?*]1i";
-    right: 0;
-  }
+    80% {
+        content: "4./?*]1i";
+        right: 0;
+    }
 
-  85% {
-    content: "y/yd.u:s";
-    right: 0;
-  }
+    85% {
+        content: "y/yd.u:s";
+        right: 0;
+    }
 
-  90% {
-    content: "/j{x|[n!";
-    right: 0;
-  }
+    90% {
+        content: "/j{x|[n!";
+        right: 0;
+    }
 
-  95% {
-    content: "j&(:d?_h";
-    right: 0;
-  }
+    95% {
+        content: "j&(:d?_h";
+        right: 0;
+    }
 
-  100% {
-    content: "w4g32k),";
-    right: 0;
-  }
+    100% {
+        content: "w4g32k),";
+        right: 0;
+    }
 }
 @keyframes chitchat15 {
-  0% {
-    content: "i?@>c.st";
-  }
+    0% {
+        content: "i?@>c.st";
+    }
 
-  5% {
-    content: "nd8^$c:)";
-  }
+    5% {
+        content: "nd8^$c:)";
+    }
 
-  10% {
-    content: "8+#*a__u";
-  }
+    10% {
+        content: "8+#*a__u";
+    }
 
-  15% {
-    content: "x*\yj.b3";
-  }
+    15% {
+        content: "x*\yj.b3";
+    }
 
-  20% {
-    content: "dxupr[c_";
-  }
+    20% {
+        content: "dxupr[c_";
+    }
 
-  25% {
-    content: "'p<7+v^^";
-  }
+    25% {
+        content: "'p<7+v^^";
+    }
 
-  30% {
-    content: "(9hj[?tr";
-  }
+    30% {
+        content: "(9hj[?tr";
+    }
 
-  35% {
-    content: "gg*'.1{2";
-  }
+    35% {
+        content: "gg*'.1{2";
+    }
 
-  40% {
-    content: ":xef?_:j";
-  }
+    40% {
+        content: ":xef?_:j";
+    }
 
-  45% {
-    content: "xd1da;cy";
-  }
+    45% {
+        content: "xd1da;cy";
+    }
 
-  50% {
-    content: "$*z&]b_<";
-  }
+    50% {
+        content: "$*z&]b_<";
+    }
 
-  55% {
-    content: "isawe(+s";
-  }
+    55% {
+        content: "isawe(+s";
+    }
 
-  60% {
-    content: "xaw?t6tn";
-    right: 0;
-  }
+    60% {
+        content: "xaw?t6tn";
+        right: 0;
+    }
 
-  65% {
-    content: "j,!<:@[y";
-    right: 0;
-  }
+    65% {
+        content: "j,!<:@[y";
+        right: 0;
+    }
 
-  70% {
-    content: "t6v+5qmk";
-    right: 0;
-  }
+    70% {
+        content: "t6v+5qmk";
+        right: 0;
+    }
 
-  75% {
-    content: "lz>?a0pg";
-    right: 0;
-  }
+    75% {
+        content: "lz>?a0pg";
+        right: 0;
+    }
 
-  80% {
-    content: "4./?*]1i";
-    right: 0;
-  }
+    80% {
+        content: "4./?*]1i";
+        right: 0;
+    }
 
-  85% {
-    content: "[\0]hn^{";
-    right: 0;
-  }
+    85% {
+        content: "[\0]hn^{";
+        right: 0;
+    }
 
-  90% {
-    content: "r.m:!f/S";
-    right: 0;
-  }
+    90% {
+        content: "r.m:!f/S";
+        right: 0;
+    }
 
-  95% {
-    content: ",xux>h6*";
-    right: 0;
-  }
+    95% {
+        content: ",xux>h6*";
+        right: 0;
+    }
 
-  100% {
-    content: ":6u@iii\S";
-    right: 0;
-  }
+    100% {
+        content: ":6u@iii\S";
+        right: 0;
+    }
 }
 @keyframes chitchat21 {
-  0% { /*     Riskiofi */
-    content: "!334!#c@";
-  }
+    0% { /*     Riskiofi */
+        content: "!334!#c@";
+    }
 
-  5% {
-    content: "*^!$5481*&";
-  }
+    5% {
+        content: "*^!$5481*&";
+    }
 
-  10% {
-    content: "Ri$!14nnMw";
-  }
+    10% {
+        content: "Ri$!14nnMw";
+    }
 
-  15% {
-    content: "Ri!$81fi";
-  }
+    15% {
+        content: "Ri!$81fi";
+    }
 
-  20% {
-    content: "Ri!sk%fi";
-  }
+    20% {
+        content: "Ri!sk%fi";
+    }
 
-  25% {
-    content: "Riski%fi";
-  }
+    25% {
+        content: "Riski%fi";
+    }
 
-  30% {
-    content: "R1ski0fi";
-  }
+    30% {
+        content: "R1ski0fi";
+    }
 
-  35% {
-    content: "R1ski0fi";
-  }
+    35% {
+        content: "R1ski0fi";
+    }
 
-  40% {
-    content: "!$!t50fi";
-  }
+    40% {
+        content: "!$!t50fi";
+    }
 
-  45% {
-    content: "Riskiofi";
-  }
+    45% {
+        content: "Riskiofi";
+    }
 
-  100% {
-    content: "Riskiofi";
-  }
+    100% {
+        content: "Riskiofi";
+    }
 }
 @keyframes chitchat22 {
-  0% { /*     Глушаненко Семён Вадимович */
-    content: "/!'@w*:?*g:jc@:{wr@9y$b|o9";
-  }
+    0% { /*     Глушаненко Семён Вадимович */
+        content: "/!'@w*:?*g:jc@:{wr@9y$b|o9";
+    }
 
-  5% {
-    content: "cl+bh09+!yz<\y2qgyr^uce^.#";
-  }
+    5% {
+        content: "cl+bh09+!yz<\y2qgyr^uce^.#";
+    }
 
-  10% {
-    content: "Глуd488%4rxg/gён+Вадиm$zm'";
-  }
+    10% {
+        content: "Глуd488%4rxg/gён+Вадиm$zm'";
+    }
 
-  15% {
-    content: "7#y.v:@7>|q{+>fz3{e\q<>8ович";
-  }
+    15% {
+        content: "7#y.v:@7>|q{+>fz3{e\q<>8ович";
+    }
 
-  20% {
-    content: "7#y.vy9.:%93:*z3{eВадимович";
-  }
+    20% {
+        content: "7#y.vy9.:%93:*z3{eВадимович";
+    }
 
-  25% {
-    content: "7#y.vy\wm,89*zён Вадимович";
-  }
+    25% {
+        content: "7#y.vy\wm,89*zён Вадимович";
+    }
 
-  30% {
-    content: "f*z*2[3{o!/Семён Вадимович";
-  }
+    30% {
+        content: "f*z*2[3{o!/Семён Вадимович";
+    }
 
-  35% {
-    content: "#eanx|?,ко Семён Вадимович";
-  }
+    35% {
+        content: "#eanx|?,ко Семён Вадимович";
+    }
 
-  40% {
-    content: "yq7he}енко Семён Вадимович";
-  }
+    40% {
+        content: "yq7he}енко Семён Вадимович";
+    }
 
-  45% {
-    content: "z57шаненко Семён Вадимович";
-  }
+    45% {
+        content: "z57шаненко Семён Вадимович";
+    }
 
-  50% {
-    content: "1лушаненко Семён Вади#!5ич";
-  }
+    50% {
+        content: "1лушаненко Семён Вади#!5ич";
+    }
 
-  55% {
-    content: "Глушаненко Семён Вадимович";
-  }
+    55% {
+        content: "Глушаненко Семён Вадимович";
+    }
 
-  60% {
-    content: "Глу%1ненко Се!;@ Вадимович";
-    
-  }
+    60% {
+        content: "Глу%1ненко Се!;@ Вадимович";
 
-  65% {
-    content: "Глушаненко Семён Вадимович";
-    
-  }
-  100% {
-    content: "Глушаненко Семён Вадимович";
-  }
+    }
+
+    65% {
+        content: "Глушаненко Семён Вадимович";
+
+    }
+    100% {
+        content: "Глушаненко Семён Вадимович";
+    }
 }
 @keyframes chitchat23 {
-  0% { /*     15.07.2009 */
-    content: "/!:$!41;24";
-  }
+    0% { /*     15.07.2009 */
+        content: "/!:$!41;24";
+    }
 
-  5% {
-    content: "UG!$7nxa:.";
-  }
+    5% {
+        content: "UG!$7nxa:.";
+    }
 
-  10% {
-    content: "15.!%.!$^*";
-  }
+    10% {
+        content: "15.!%.!$^*";
+    }
 
-  15% {
-    content: "4!.07.!$^*";
-  }
+    15% {
+        content: "4!.07.!$^*";
+    }
 
-  20% {
-    content: "$#.*!.2009";
-  }
+    20% {
+        content: "$#.*!.2009";
+    }
 
-  25% {
-    content: "1.*7.2009";
-  }
+    25% {
+        content: "1.*7.2009";
+    }
 
-  30% {
-    content: "1.*7.2999";
-  }
+    30% {
+        content: "1.*7.2999";
+    }
 
-  35% {
-    content: "51.7.2909";
-  }
+    35% {
+        content: "51.7.2909";
+    }
 
-  40% {
-    content: "15.7.2009";
-  }
+    40% {
+        content: "15.7.2009";
+    }
 
-  45% {
-    content: "15.07.2009";
-  }
+    45% {
+        content: "15.07.2009";
+    }
 
- 
-  100% {
-    content: "15.07.2009";
-  }
+
+    100% {
+        content: "15.07.2009";
+    }
 }
 @keyframes chitchat24 {
-  0% { /*     Unity Junior */
-    content: "cjx\r'nm#\_]";
-  }
+    0% { /*     Unity Junior */
+        content: "cjx\r'nm#\_]";
+    }
 
-  5% {
-    content: "&3l'@}s[<exv";
-  }
+    5% {
+        content: "&3l'@}s[<exv";
+    }
 
-  10% {
-    content: "28vm^os1f]|0";
-  }
+    10% {
+        content: "28vm^os1f]|0";
+    }
 
-  15% {
-    content: "g^n*z7{ndo8u";
-  }
+    15% {
+        content: "g^n*z7{ndo8u";
+    }
 
-  20% {
-    content: "U0)v:Jc:|t?R";
-  }
+    20% {
+        content: "U0)v:Jc:|t?R";
+    }
 
-  25% {
-    content: "U;I9*Jx+(7fR";
-  }
+    25% {
+        content: "U;I9*Jx+(7fR";
+    }
 
-  30% {
-    content: "UIIIJ)l'7z\R";
-  }
+    30% {
+        content: "UIIIJ)l'7z\R";
+    }
 
-  35% {
-    content: "UI{yJu5?_dhr";
-  }
+    35% {
+        content: "UI{yJu5?_dhr";
+    }
 
-  40% {
-    content: "Ui{yju5?_dhr";
-  }
-  45% {
-    content: "Uni*cxk@h}qs";
-  }
-  50% {
-    content: "Unity p#x3og";
-  }
-  55% {
-    content: "Unity ,}5o%or";
-  }
-  60% {
-    content: "Unity 7%bior";
-  }
-  65% {
-    content: "Unity Junior";
-  }
-  70% {
-    content: "Unity Error";
-  }
-  100% {
-    content: "Unity Junior";
-  }
+    40% {
+        content: "Ui{yju5?_dhr";
+    }
+    45% {
+        content: "Uni*cxk@h}qs";
+    }
+    50% {
+        content: "Unity p#x3og";
+    }
+    55% {
+        content: "Unity ,}5o%or";
+    }
+    60% {
+        content: "Unity 7%bior";
+    }
+    65% {
+        content: "Unity Junior";
+    }
+    70% {
+        content: "Unity Error";
+    }
+    100% {
+        content: "Unity Junior";
+    }
 }
 @keyframes chitchat25 {
-  0% {
-    content: "b%@h'v/@^(r|r.&dfi#!|@4s8yga;m&lm]n2:>dc>7g!#'12/rwynw^y:+ikm8+y#>d.2z6@w?lfe&'/_,/8a}wu";
-  }
-  5% {
-    content: "qjjrr##$!bk+$2;4r(ni($*g/3>#2/;#sh)h!u!zx4kgmg1s1*%|]63;&?]m8]_%isp^:'+6$**w*}9k03c5(}%,";
-  }
-  10% {
-    content: "4o!_%5o'xzq,}!3_dtt'cx&(^t}rzw1*n)?5xz,+>)o7:9%/nkkmy%d}a%9z@$o/kh7/vi}wm%qn!zhyt.7@}s'b";
-  }
-  15% {
-    content: "v}l$)+95%(ngjf]ht(*r?%1/1f|:uz%},prq;?ap$y718yz!'):4rez3l5$36:bf+(u6dw,e7>|//!|wx!;o^l;m";
-  }
-  20% {
-    content: "Proj'#,tp4vh>sos;3l@vm6'eft7h3a96pe4sg_c'oftc'|4hp#6f|pgu9_7^)i95&&himz!sbob9+}!tmfbzlfq";
-  }
-  25% {
-    content: "Proj*,qx6iuvi3y*,c!zt(?4n_/s0>#*88/((j|kqa!6y0u_'p(#$ssln(v2mo!u^:4k5v##3!}8(q31@$w*b#te";
-  }
-  30% {
-    content: "Projec3!n*&o#6*>5?+4?9_z%o1>x#+*rj99#19)b,n?g*4*+p5!!r4?d?%;y_4*jubp&px%3b5v+9t9|hnflete";
-  }
-  35% {
-    content: "Project: h)$_''!}8'9ens2@jkrunovp12nt;lr&|1u8v+z}/bz#vepvc?q>63ned0yydaqp:e%q#1?;j5sllete";
-  }
-  40% {
-    content: "Project: Fi@%pm,,6:d?p9^o.hg*)h1*ac(9f1'*0jwvzxv.e?*05+p;@3o>]@tn:wbp&@%hnb!ed$2?*Pallete";
-  }
-  45% {
-    content: "Project: Five*kyy(,5!u&%/*d;*vl*_n3:45#0?$'+n:72*u]4#jx13|6rij(&+:z/nc3*/&5j9(vq, Pallete";
-  }
-  50% {
-    content: "Project: Five N!+c_,c&.4&$h(8y%omx!l+&+}yncl$!2(swr*m6.u'qqz?k9,*985n9t5i*88$+fe, Pallete";
-  }
-  55% {
-    content: "Project: Five Nig+i2n7cy1g},;aex)wh7dpw.#p)*j@o.u6ni_e78o48fb46/o*68#g7*3qs@Life, Pallete";
-  }
-  60% {
-    content: "Project: Five Nightu79gy_;d:wq%e|%p6e8|+g+]kqy!/j}s7v!>ts|7x75wyk0/19l3yy|meLife, Pallete";
-  }
-  65% {
-    content: "Project: Five Nights At Momn4!|2#)'x9b/y,9'p_u*xi@1)$7&x)ab$!#_$5$k&^&, GameLife, Pallete";
-  }
-  70% {
-    content: "Project: Five Nights At Mom, Futurel50*x|el/e#*v%kfm:af4:(/v}$tleepers, GameLife, Pallete";
-  }
-  75% {
-    content: "Project: Five Nights At Mom, Future Cube,w*k>*#|*!d_w1(}Dodge Sweepers, GameLife, Pallete";
-  }
-  80% {
-    content: "Project: Five Nights At Mom, Future Cube, Spa@$86!attle, Dodge Sweepers, GameLife, Pallete";
-  }
-  85% {
-    content: "Project: Five Nights At Mom, Future Cube, SpaceBattle, Dodge Sweepers, GameLife, Pallete";
-  }
-  100% {
-    content: "Projects: Five Nights At Mom, FutureCube, SpaceBattle, Dodge Sweepers, GameLife, Pallete";
-  }
+    0% {
+        content: "b%@h'v/@^(r|r.&dfi#!|@4s8yga;m&lm]n2:>dc>7g!#'12/rwynw^y:+ikm8+y#>d.2z6@w?lfe&'/_,/8a}wu";
+    }
+    5% {
+        content: "qjjrr##$!bk+$2;4r(ni($*g/3>#2/;#sh)h!u!zx4kgmg1s1*%|]63;&?]m8]_%isp^:'+6$**w*}9k03c5(}%,";
+    }
+    10% {
+        content: "4o!_%5o'xzq,}!3_dtt'cx&(^t}rzw1*n)?5xz,+>)o7:9%/nkkmy%d}a%9z@$o/kh7/vi}wm%qn!zhyt.7@}s'b";
+    }
+    15% {
+        content: "v}l$)+95%(ngjf]ht(*r?%1/1f|:uz%},prq;?ap$y718yz!'):4rez3l5$36:bf+(u6dw,e7>|//!|wx!;o^l;m";
+    }
+    20% {
+        content: "Proj'#,tp4vh>sos;3l@vm6'eft7h3a96pe4sg_c'oftc'|4hp#6f|pgu9_7^)i95&&himz!sbob9+}!tmfbzlfq";
+    }
+    25% {
+        content: "Proj*,qx6iuvi3y*,c!zt(?4n_/s0>#*88/((j|kqa!6y0u_'p(#$ssln(v2mo!u^:4k5v##3!}8(q31@$w*b#te";
+    }
+    30% {
+        content: "Projec3!n*&o#6*>5?+4?9_z%o1>x#+*rj99#19)b,n?g*4*+p5!!r4?d?%;y_4*jubp&px%3b5v+9t9|hnflete";
+    }
+    35% {
+        content: "Project: h)$_''!}8'9ens2@jkrunovp12nt;lr&|1u8v+z}/bz#vepvc?q>63ned0yydaqp:e%q#1?;j5sllete";
+    }
+    40% {
+        content: "Project: Fi@%pm,,6:d?p9^o.hg*)h1*ac(9f1'*0jwvzxv.e?*05+p;@3o>]@tn:wbp&@%hnb!ed$2?*Pallete";
+    }
+    45% {
+        content: "Project: Five*kyy(,5!u&%/*d;*vl*_n3:45#0?$'+n:72*u]4#jx13|6rij(&+:z/nc3*/&5j9(vq, Pallete";
+    }
+    50% {
+        content: "Project: Five N!+c_,c&.4&$h(8y%omx!l+&+}yncl$!2(swr*m6.u'qqz?k9,*985n9t5i*88$+fe, Pallete";
+    }
+    55% {
+        content: "Project: Five Nig+i2n7cy1g},;aex)wh7dpw.#p)*j@o.u6ni_e78o48fb46/o*68#g7*3qs@Life, Pallete";
+    }
+    60% {
+        content: "Project: Five Nightu79gy_;d:wq%e|%p6e8|+g+]kqy!/j}s7v!>ts|7x75wyk0/19l3yy|meLife, Pallete";
+    }
+    65% {
+        content: "Project: Five Nights At Momn4!|2#)'x9b/y,9'p_u*xi@1)$7&x)ab$!#_$5$k&^&, GameLife, Pallete";
+    }
+    70% {
+        content: "Project: Five Nights At Mom, Futurel50*x|el/e#*v%kfm:af4:(/v}$tleepers, GameLife, Pallete";
+    }
+    75% {
+        content: "Project: Five Nights At Mom, Future Cube,w*k>*#|*!d_w1(}Dodge Sweepers, GameLife, Pallete";
+    }
+    80% {
+        content: "Project: Five Nights At Mom, Future Cube, Spa@$86!attle, Dodge Sweepers, GameLife, Pallete";
+    }
+    85% {
+        content: "Project: Five Nights At Mom, Future Cube, SpaceBattle, Dodge Sweepers, GameLife, Pallete";
+    }
+    100% {
+        content: "Projects: Five Nights At Mom, FutureCube, SpaceBattle, Dodge Sweepers, GameLife, Pallete";
+    }
 }
 
- 
- 
+

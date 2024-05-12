@@ -402,9 +402,9 @@ body {
 }
 
 .author-img {
-    width: 195px;
+    filter: grayscale(70%);
+    width: 220px;
     height: 280px;
-    border-radius: 20px;
 }
 .card {
     border: solid rgb(53, 53, 53);

@@ -402,8 +402,7 @@ body {
 }
 
 .author-img {
-    filter: grayscale(70%);
-    width: 220px;
+    width: 200px;
     height: 280px;
 }
 .card {
